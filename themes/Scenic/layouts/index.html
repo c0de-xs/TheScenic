@@ -1,0 +1,18 @@
+{{ define "main" }} 
+<h1>{{.Title}}</h1> 
+{{ with .Params.description }} 
+<p class="description">{{.}}</p>
+{{ end }} 
+{{ with .Params.subtitle }} 
+<p class="subtitle">{{.}}</p> 
+{{ end }}
+<div class="content">{{.Content}}</div> 
+<div class="range">{{ range .Pages.ByPublishDate }} 
+<h3><a href="{{ .Permalink }}">{{.Params.title}}</a></h3>
+{{ with .Params.summary }}
+<p class="summary">{{.}}</p>
+{{ end }}
+<hr> 
+{{ end }} 
+</div><!--END .range--> 
+{{ end }}

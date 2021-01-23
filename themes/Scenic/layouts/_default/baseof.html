@@ -3,9 +3,13 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div id="content">
+        {{- partial "body.html" . -}}
+        <main id="content" role="main">
+            <article class="photo-article">
+              <h2 class="m3 center h4 italic">Photo Gallery</h2>
         {{- block "main" . }}{{- end }}
         </div>
+        {{- partial "after.html" . -}}
         {{- partial "footer.html" . -}}
     </body>
 </html>

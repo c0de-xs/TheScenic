@@ -1,3 +1,33 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+# Edit the following values between the quotation marks ("")
+baseURL = "https://www.code-xs.cloud" # Your site url
+languageCode = "en_US" # Your site's main language
+title = "Vamp" # Your site's title
+copyright = "" # The copyright info for the footer
+### EDIT BELOW THIS POINT AT YOUR OWN RISK ###
+theme = "Scenic" 
+[taxonomies] 
+tag = "tags" 
+category = "categories" 
+#TAXONOMY_NAME_SINGLE = "PLURAL" 
+# Add your own taxonomies 
+[params]
+quote = "If you need me I'll be in my coffin."
+g-font = ""
+font-name = ""
+white = "#fffcfc" #Initial value #fffcfc
+black = "#333" #Initial value #333
+green = "#699" #Initial value #699
+red = "#933" #Initial value #933
+orange = "#fc0" #Initial value #fc0
+twitter = "https://www.twitter.com/AnimoPhoenicus"
+facebook = "https://www.facebook.com"
+instagram = "https://www.instagram.com"
+pinterest = "https://www.pinterest.com"
+youtube = "https://www.pinterest.com"
+reddit = "https://www.reddit.com"
+tik-tok = "https://www.tik-tok.com"
+snapchat = "https://www.snapchat.com"
+github = "https://www.github.com"
+gitlab = "https://www.gitlab.com"
+
+### EDIT BELOW THIS POINT ONLY IF YOU KNOW WHAT ARE YOU DOING ###
