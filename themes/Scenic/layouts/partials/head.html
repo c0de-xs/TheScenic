@@ -91,12 +91,12 @@
       src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"
       async=""
     ></script>
-
+{{ with .Site.Params.gfont }}
     <link
-      href="https://fonts.googleapis.com/css?family=EB+Garamond%7CWork+Sans:400,700"
+      href="https://fonts.googleapis.com/css?family={{.}})"
       rel="stylesheet"
     />
-
+{{ end }}
     <style amp-custom="">
       /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 
