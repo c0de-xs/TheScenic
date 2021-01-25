@@ -2,10 +2,7 @@
     <meta charset="utf-8" />
     <title>{{ .Site.Title }}</title>
     <link rel="canonical" href="https://www.ampstart.com/" />
-    <meta name="viewport" content="width=device-width" />
-{{ with eq .Site.Params.ampGoogleAnalytics "true" }}
-    <meta name="amp-google-client-id-api" content="googleanalytics" />
-{{ end }}
+    <meta name="viewport" content="width=device-width, initial-scale=1`" />
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
 
     <style amp-boilerplate="">
@@ -1939,4 +1936,7 @@
         line-height: 1.14782;
       }
     </style>
+    {{ with eq .Site.Params.ampGoogleAnalytics "true" }}
+    <meta name="amp-google-client-id-api" content="googleanalytics" />
+{{ end }}
   </head>
