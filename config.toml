@@ -12,7 +12,7 @@ category = "categories"
 # Add your own taxonomies 
 [params]
 gfont = "Raleway"
-fonts = "Raleway"
+fontfamily = "Raleway"
 ampInstagram = "true"
 ampCarousel = "true"
 ampAccordion = "true"

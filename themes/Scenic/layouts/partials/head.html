@@ -94,10 +94,9 @@
       async=""
     ></script>
 {{ with .Site.Params.gfont }}
-    <link
-      href="https://fonts.googleapis.com/css?family={{.}})"
-      rel="stylesheet"
-    />
+<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family={{.}}" rel="stylesheet">
+
 {{ end }}
     <style amp-custom="">
       /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
@@ -1168,7 +1167,9 @@
       body {
         background: #fff;
         color: #4a4a4a;
-        font-family: EB Garamond, times, serif;
+        {{ with .Site.Params.fontfamily }}
+        font-family: "{{.}}", times, serif;
+        {{ end }}
         min-width: 315px;
         overflow-x: hidden;
         font-smooth: always;
@@ -1855,7 +1856,9 @@
         color: #000;
       }
       .ampstart-headerbar-title {
-        font: normal 1.25rem/1.6 EB Garamond, times, serif;
+        {{ with .Site.Params.fontfamily }}
+        font: normal 1.25rem/1.6 {{.}}, times, serif;
+        {{ end }}
       }
       .ampstart-navbar-trigger {
         font-size: 1.5rem;
