@@ -1,5 +1,5 @@
-# Vamp Theme for Hugo
- This is another AMP compatible theme for [Hugo](https://gohugo.io "The world’s fastest framework for building websites").
+# Scenic Theme for Hugo
+ A port of the The Scenic template for [Hugo](https://gohugo.io "The world’s fastest framework for building websites").
 
 ![GitHub](https://img.shields.io/github/license/c0de-xs/Vamp?color=yellowgreen)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/c0de-xs/Vamp?color=yellowgreen)
