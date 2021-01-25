@@ -13,6 +13,11 @@ category = "categories"
 [params]
 gfont = "Raleway"
 fonts = "Raleway"
+InstagramEmbed = "true"
+Carousel = "true"
+Accordion = "true"
+SocialShare = "true"
+GoogleAnalytics = "false"
 white = "#fffcfc" #Initial value #fffcfc
 black = "#333" #Initial value #333
 green = "#699" #Initial value #699
