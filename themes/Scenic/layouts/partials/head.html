@@ -3,7 +3,7 @@
     <title>{{ .Site.Title }}</title>
     <link rel="canonical" href="https://www.ampstart.com/" />
     <meta name="viewport" content="width=device-width" />
-{{ with .Site.Params.ampGoogleAnalytics "true" }}
+{{ with eq .Site.Params.ampGoogleAnalytics "true" }}
     <meta name="amp-google-client-id-api" content="googleanalytics" />
 {{ end }}
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
@@ -66,7 +66,7 @@
         }
       </style></noscript
     >
-{{ with .Site.Params.ampCarousel "true"}}
+{{ with eq .Site.Params.ampCarousel "true"}}
     <script
       custom-element="amp-carousel"
       src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"
