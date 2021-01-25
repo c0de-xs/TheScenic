@@ -11,9 +11,8 @@ category = "categories"
 #TAXONOMY_NAME_SINGLE = "PLURAL" 
 # Add your own taxonomies 
 [params]
-quote = "If you need me I'll be in my coffin."
-g-font = ""
-font-name = ""
+gfont = "Raleway"
+fonts = "Raleway"
 white = "#fffcfc" #Initial value #fffcfc
 black = "#333" #Initial value #333
 green = "#699" #Initial value #699
