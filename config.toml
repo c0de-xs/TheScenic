@@ -18,9 +18,11 @@ ampAccordion = "true"
 ampSocialShare = "true"
 ampGoogleAnalytics = "true"
 Copyright = ""
-white = "#fffcfc" #Initial value #fffcfc
-black = "#333" #Initial value #333
-green = "#699" #Initial value #699
+## COLORS ##
+dColor = "#333" # Dark Color. Initial value #fffcfc
+lColor = "#ccc" # Light Color. Initial value #333
+bColor = "#600" # Brand Color. Initial value #699
+fColor = "#000" # Font Color. Initial value #000
 red = "#933" #Initial value #933
 orange = "#fc0" #Initial value #fc0
 twitter = "https://www.twitter.com/AnimoPhoenicus"
