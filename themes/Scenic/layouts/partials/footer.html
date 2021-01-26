@@ -92,5 +92,9 @@
         </li>
       </ul>
     </nav>
-    <small> © The Scenic, 2017 </small>
+{{ if .Site.Params.Copyright }}
+<small>{{.}}</small>
+{{ else }}
+    <small>The Hugo Scenic, © 2021 &middot; By the power of <a href="https://gohugo.io/" target="_blank" title="The world’s fastest framework for building websites">Hugo</a> and the Grayskull.</small>
+{{ end }}
   </footer>
