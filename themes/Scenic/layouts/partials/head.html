@@ -101,6 +101,20 @@
     <link href="https://fonts.googleapis.com/css?family={{.}}" rel="stylesheet">
 {{ end }}
     <style amp-custom="">
+root: {
+{{ with .Site.Params.dColor }}
+--dc: {{.}};
+{{ end }}
+{{ with .Site.Params.lColor }}
+--lc: {{.}};
+{{ end }}
+{{ with .Site.Params.bColor }}
+--bc: {{.}};
+{{ end }}
+{{ with .Site.Params.fColor }}
+--fc: {{.}};
+{{ end }}
+}
       /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 
       /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
