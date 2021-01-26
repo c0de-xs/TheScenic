@@ -1,4 +1,4 @@
-# The Scenic 
+# The Hugo Scenic 
 ## An AMP theme for Hugo
 
 A port of the [The Scenic](https://amp.dev/documentation/templates/scenic/?format=websites) template for [Hugo](https://gohugo.io "The world’s fastest framework for building websites").
@@ -9,3 +9,6 @@ A port of the [The Scenic](https://amp.dev/documentation/templates/scenic/?forma
 ---
 ### Current Version:
 **v.1.0.0-a.1**
+---
+
+
