@@ -1,41 +1,77 @@
 
 {{ define "main" }}
-<section id="main">
-  <h1 id="title">{{ .Title }}</h1>
-  <div>
-        <article id="content">
-           {{ .Content }}
-        </article>
+{{ if eq .Page.Params.heroImage "true"}}
+<div class="center">
+    <!-- Start Fullpage Hero -->
+    <figure class="ampstart-image-fullpage-hero m0 relative mb4">
+      <amp-img
+        width="404"
+        height="720"
+        {{ with .Page.Params.heroImageDescription }}
+        alt="{{ . }}"{{ end }}
+        layout="responsive"
+        {{ with .Page.Params.heroImageUrl }}
+        src="{{ . }}"{{ end }}
+        media="(max-width: 415px)"
+      ></amp-img>
+      <amp-img
+        height="720"
+        {{ with .Page.Params.heroImageDescription }}
+        alt="{{ . }}"{{ end }}
+        layout="fixed-height"
+        {{ with .Page.Params.heroImageUrl }}
+        src="{{ . }}"{{ end }}
+        media="(min-width: 416px)"
+      ></amp-img>
+      <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+        <header class="p3">
+          <h1 class="ampstart-fullpage-hero-heading mb3">
+            <span class="ampstart-fullpage-hero-heading-text">
+              {{ .Page.Title}}
+            </span>
+          </h1>
+
+          <span class="ampstart-image-credit h4">
+           {{ with .Page.Params.author }} By
+           
+            {{ . }},<br>{{ end }} on
+            {{ .Date.Format "Jan 2, 2006" }}
+          </span>
+        </header>
+        <footer class="absolute left-0 right-0 bottom-0">
+          <a
+            class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5"
+            href="#content"
+            ><span class="ampstart-readmore-text px1"></span
+          ></a>
+        </footer>
+      </figcaption>
+    </figure>
+    <!-- End Fullpage Hero --> 
+  </div> {{ else }}
+  <div class="center pt4">
+    <!-- Start Fullpage Hero -->
+    <div class="pt4">
+        <header class="">
+          <h1 class="h1 pt4">
+            <span class="">
+              {{ .Page.Title}}
+            </span>
+          </h1>
+
+          <span class="ampstart-image-credit h4">
+           {{ with .Page.Params.author }} By
+           
+            {{ . }},<br>{{ end }} on
+            {{ .Date.Format "Jan 2, 2006" }}
+          </span>
+        </header> 
+</div>
   </div>
-</section>
-<aside id="meta">
-    <div>
-    <section>
-      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-      <h5 id="wordcount"> {{ .WordCount }} Words </h5>
-    </section>
-    {{ with .Params.topics }}
-    <ul id="topics">
-      {{ range . }}
-        <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
-    {{ end }}
-    {{ with .Params.tags }}
-    <ul id="tags">
-      {{ range . }}
-        <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
-    {{ end }}
-    </div>
-    <div>
-        {{ with .PrevInSection }}
-          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-        {{ with .NextInSection }}
-          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-    </div>
-</aside>
-{{ end }}
+  {{ end }}
+  <main id="content" role="main">
+    <article class="photo-article">
+      <h2 class="m3 center h4 italic">Photo Galler</h2>
+           {{ .Content }}
+           {{ end }}
+  
