@@ -3,14 +3,14 @@
 {{ with .url }}src="{{ . }}"{{ end }}
 {{ with .width }}width="{{ . }}"{{ end }}
 {{ with .height }}height="{{ . }}"{{ end }}
-{{ with .description }}alt="{{ . }}
+{{ with .description }}alt="{{ . }}" {{ end}}
             layout="responsive"
             class=""
           ></amp-img>
 {{ with .caption }}<figcaption class="h5 mt1 px3">{{ . }}
-{{ with .credit }}<span class="ampstart-image-credit block bold">
+<span class="ampstart-image-credit block bold">
               by
               <a href="#" role="author">{{ . }}</a>
-            </span>{{ end }}
+            </span>
           </figcaption>{{ end }}
         </figure>
