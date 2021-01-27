@@ -7,10 +7,8 @@
             layout="responsive"
             class=""
           ></amp-img>
-{{ with .caption }}<figcaption class="h5 mt1 px3">{{ . }}
-<span class="ampstart-image-credit block bold">
-              by
-              <a href="#" role="author">{{ . }}</a>
+          {{ if and (.caption) (.credit) }}<figcaption class="h5 mt1 px3">{{ with .caption}}{{ . }}{{end}}
+            <span class="ampstart-image-credit block bold">by {{ with .credit}}{{.}}{{end}}  
             </span>
           </figcaption>{{ end }}
         </figure>
