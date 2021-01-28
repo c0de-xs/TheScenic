@@ -10,5 +10,8 @@
           {{ if and (.caption) (.credit) }}<figcaption class="h5 mt1 px3">{{ with .caption}}{{ . }}{{end}}
             <span class="ampstart-image-credit block bold">by {{ with .credit}}{{.}}{{end}}  
             </span>
-          </figcaption>{{ end }}
+          </figcaption>{{ else if .caption}}
+          <figcaption class="h5 mt1 px3">{{ with .caption}}{{ . }}{{end}}</figcaption>{{ else if .credit}}<span class="ampstart-image-credit block bold">by {{ with .credit}}{{.}}{{end}}  
+          </span>
+          {{ end -}}
         </figure>
