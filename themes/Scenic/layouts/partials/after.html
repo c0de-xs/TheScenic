@@ -1,160 +1,55 @@
-<!-- Start Image with Caption -->
-<figure class="ampstart-image-with-caption m0 relative mb4">
-    <amp-img
-      src="../images/jump.jpg"
-      width="756"
-      height="520"
-      alt="Description of the photograph."
-      layout="responsive"
-      class=""
-    ></amp-img>
-    <figcaption class="h5 mt1 px3">
-      Description of the photograph.
-      <span class="ampstart-image-credit block bold">
-        Taken by
-        <a href="#" role="author">Andrew Branch</a>
-      </span>
-    </figcaption>
-  </figure>
-  <!-- End Image with Caption -->
-
-  <!-- Start carousel -->
-  <amp-carousel
-    width="756"
-    height="638"
-    layout="responsive"
-    type="slides"
-    class="mb4"
-  >
-    <!-- Start Image with Caption -->
-    <figure class="ampstart-image-with-caption m0 relative mb4">
-      <amp-img
-        src="../images/cars.jpg"
-        width="756"
-        height="520"
-        alt="New York cars."
-        layout="responsive"
-        class=""
-      ></amp-img>
-      <figcaption class="h5 mt1 px3">
-        New York cars.
-        <span class="ampstart-image-credit block bold">
-          Taken by
-          <a href="#" role="author">Jack Alexander</a>
-        </span>
-      </figcaption>
-    </figure>
-    <!-- End Image with Caption -->
-
-    <!-- Start Image with Caption -->
-    <figure class="ampstart-image-with-caption m0 relative mb4">
-      <amp-img
-        src="../images/street.jpg"
-        width="756"
-        height="520"
-        alt="New York street"
-        layout="responsive"
-        class=""
-      ></amp-img>
-      <figcaption class="h5 mt1 px3">
-        New York street
-        <span class="ampstart-image-credit block bold">
-          Taken by
-          <a href="#" role="author">Jack Alexander</a>
-        </span>
-      </figcaption>
-    </figure>
-    <!-- End Image with Caption -->
-  </amp-carousel>
-  <!-- End carousel -->
-  <p class="m3">
-    Eu eam euismod comprehensam, posse accusata vel at. Quaestio
-    intellegat adipiscing an mel. Vix ei oratio docendi, cu est falli
-    convenire democritum. Per illud platonem eu, ea vel porro numquam
-    copiosae, habeo solet et vis. Id nam porro accusamus principes, cum ne
-    legimus denique. Mei ea rationibus definitionem.
-  </p>
-  <div class="clearfix">
-    <amp-img
-      src="../images/building_square.jpg"
-      width="100"
-      height="100"
-      class="left mr3"
-    ></amp-img>
-    <p class="mx3 my1 caps h3 bold">Section title</p>
-    <h2 class="mx3 my1 h2 line-height-2">
-      Article title goes in this space right here
-    </h2>
-  </div>
-  <p class="m3">
-    Tractatos eloquentiam nec an, ius malorum erroribus ei, illum everti
-    vix ad. Ei eam probo postea vivendum, eu vim veniam quaeque nostrum.
-    No sea mediocrem moderatius, mutat dicta maiestatis nam an.
-  </p>
-  <amp-instagram
-    data-shortcode="BRULdLTD3vf"
-    width="327"
-    height="214"
-    layout="responsive"
-    class="p0 m3"
-  ></amp-instagram>
-  <p class="m3">
-    Vestibulum eu varius dolor. Praesent sagittis magna sem, non bibendum
-    quam aliquam et. Sed et tristique mi. Quisque porta lorem et nulla
-    lacinia gravida. Nullam semper lobortis sem, interdum tempus tellus.
-  </p>
-</article>
-
-<aside>
-  <!-- Start Socialbox -->
-  <div class="ampstart-social-box mb4">
-    <amp-social-share
-      type="twitter"
-      aria-label="Share this on Twitter"
-    ></amp-social-share>
-    <amp-social-share
-      type="facebook"
-      aria-label="Share this on Facebook"
-      data-param-text="Hello world"
-      data-param-href="https://example.com/?ref=URL"
-      data-param-app_id="145634995501895"
-    ></amp-social-share>
-    <amp-social-share
-      type="gplus"
-      aria-label="Share this on Google Plus"
-    ></amp-social-share>
-
-    <amp-social-share
-      type="pinterest"
-      aria-label="Share this on pin trest"
-    ></amp-social-share>
-    <amp-social-share
-      type="email"
-      aria-label="Share this with E-mail"
-      data-param-subject="Hello World"
-      data-param-body="What's up?"
-    ></amp-social-share>
-  </div>
-  <!-- End Socialbox -->
-
-  <h2 class="m3 mb4 pb4 caps bold center h3">Related articles</h2>
-
-  <article class="ampstart-article-summary m0 relative">
-    <a href="#">
-      <amp-img
-        width="360"
-        height="400"
-        layout="responsive"
-        src="../images/tower.jpg"
-      ></amp-img>
-      <header class="absolute bottom-0 right-0 left-0 center m3 p3">
-        <h3 class="caps bold">Paris</h3>
-        <h1 class="h2 my1">
-          Nam vidit erant nonumes in, homero menandri praesent vix an
-        </h1>
-        <p class="h3 bold">28 comments</p>
-      </header>
-    </a>
-  </article>
-</aside>
-</main>
+{{ if eq .Site.Params.ampSocialShare "true"}}
+            <aside>   <!-- Start Socialbox -->
+                    <div class="m3 mb4">
+                      <amp-social-share 
+            type="system" 
+            aria-label="Share"
+            ></amp-social-share>
+                      <amp-social-share
+                        type="twitter"
+                        aria-label="Share this on Twitter"
+                      ></amp-social-share>
+                      <amp-social-share
+                        type="facebook"
+                        aria-label="Share this on Facebook"
+                        data-param-text="Hello world"
+                        data-param-href="https://example.com/?ref=URL"
+                        data-param-app_id="145634995501895"
+                      ></amp-social-share>
+            <amp-social-share type="system" aria-label="Share"></amp-social-share>
+                      <amp-social-share
+                        type="pinterest"
+                        aria-label="Share this on pin trest"
+                      ></amp-social-share>
+                      <amp-social-share
+                        type="email"
+                        aria-label="Share this with E-mail"
+                        data-param-subject="Hello World"
+                        data-param-body="What's up?"
+                      ></amp-social-share>
+                      <amp-social-share type="system" aria-label="Share"></amp-social-share>
+                    </div>
+                    <!-- End Socialbox -->
+            {{ end }}
+                    
+<h2 class="m3 mb4 pb4 caps bold center h3">Related articles</h2>
+            
+                    <article class="ampstart-article-summary m0 relative">
+                      <a href="#">
+                        <amp-img
+                          width="360"
+                          height="400"
+                          layout="responsive"
+                          src="img/tower.jpg"
+                        ></amp-img>
+                        <header class="absolute bottom-0 right-0 left-0 center m3 p3">
+                          <h3 class="caps bold">Paris</h3>
+                          <h1 class="h2 my1">
+                            Nam vidit erant nonumes in, homero menandri praesent vix an
+                          </h1>
+                          <p class="h3 bold">28 comments</p>
+                        </header>
+                      </a>
+                    </article>
+                  </aside>
+                </main>

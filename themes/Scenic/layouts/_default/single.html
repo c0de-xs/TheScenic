@@ -2,17 +2,17 @@
 {{ define "main" }}
 {{ if eq .Page.Params.heroImage "true"}}
 <div class="center">
-    <!-- Start Fullpage Hero -->
-    <figure class="ampstart-image-fullpage-hero m0 relative mb4">
-      <amp-img
-        width="404"
-        height="720"
-        {{ with .Page.Params.heroImageDescription }}
-        alt="{{ . }}"{{ end }}
-        layout="responsive"
-        {{ with .Page.Params.heroImageUrl }}
-        src="{{ . }}"{{ end }}
-        media="(max-width: 415px)"
+<!-- Start Fullpage Hero -->
+  <figure class="ampstart-image-fullpage-hero m0 relative mb4">
+    <amp-img
+      width="404"
+      height="720"
+      {{ with .Page.Params.heroImageDescription }}
+      alt="{{ . }}"{{ end }}
+      layout="responsive"
+      {{ with .Page.Params.heroImageUrl }}
+      src="{{ . }}"{{ end }}
+      media="(max-width: 415px)"
       ></amp-img>
       <amp-img
         height="720"
@@ -73,60 +73,119 @@
     <article class="photo-article">
       <h2 class="m3 center h4 italic">Photo Galler</h2>
            {{ .Content }}
-           {{ end }}
-      <aside>
-{{ with eq .Site.Params.ampSocialShare "true"}}
-        <!-- Start Socialbox -->
-        <div class="m3 mb4">
-        	<amp-social-share 
-type="system" 
-aria-label="Share"
-></amp-social-share>
-          <amp-social-share
-            type="twitter"
-            aria-label="Share this on Twitter"
-          ></amp-social-share>
-          <amp-social-share
-            type="facebook"
-            aria-label="Share this on Facebook"
-            data-param-text="Hello world"
-            data-param-href="https://example.com/?ref=URL"
-            data-param-app_id="145634995501895"
-          ></amp-social-share>
-<amp-social-share type="system" aria-label="Share"></amp-social-share>
-          <amp-social-share
-            type="pinterest"
-            aria-label="Share this on pin trest"
-          ></amp-social-share>
-          <amp-social-share
-            type="email"
-            aria-label="Share this with E-mail"
-            data-param-subject="Hello World"
-            data-param-body="What's up?"
-          ></amp-social-share>
-          <amp-social-share type="system" aria-label="Share"></amp-social-share>
-        </div>
-        <!-- End Socialbox -->
-{{ end }}
-        <h2 class="m3 mb4 pb4 caps bold center h3">Related articles</h2>
-
-        <article class="ampstart-article-summary m0 relative">
-          <a href="#">
-            <amp-img
-              width="360"
-              height="400"
-              layout="responsive"
-              src="img/tower.jpg"
-            ></amp-img>
-            <header class="absolute bottom-0 right-0 left-0 center m3 p3">
-              <h3 class="caps bold">Paris</h3>
-              <h1 class="h2 my1">
-                Nam vidit erant nonumes in, homero menandri praesent vix an
-              </h1>
-              <p class="h3 bold">28 comments</p>
-            </header>
-          </a>
-        </article>
-      </aside>
-    </main>
-  
+            {{ if eq .Site.Params.ampSocialShare "true"}}
+      <aside>   
+      <!-- Start Socialbox -->
+      <div class="m3 mb4">
+      {{ with .Site.Params.ShareOnTwitter }}
+        <amp-social-share
+          type="twitter"
+          aria-label="Share this on Twitter"
+          class="share"
+          width="45"
+          height="45"
+        ></amp-social-share>
+        {{ end }}
+        {{ with .Site.Params.ShareOnFacebook }}
+        <amp-social-share
+          type="facebook"
+          aria-label="Share this on Facebook"
+          data-param-text="Hello world"
+          data-param-href="https://example.com/?ref=URL"
+          data-param-app_id="145634995501895"
+          class="share"
+          width="45"
+          height="45"
+        ></amp-social-share>
+        {{ end }}
+        {{ with .Site.Params.ShareOnLinkedIn }}
+        <amp-social-share
+          type="linkedin"
+          data-param-text="Hello world"
+          data-param-url="https://example.com/"
+          aria-label="Share on LinkedIn"
+          class="share"
+          width="45"
+          height="45"
+        ></amp-social-share>
+        {{ end }}
+        {{ with .Site.Params.ShareOnPinterest }}
+        <amp-social-share
+          type="pinterest"
+          aria-label="Share this on pin trest"
+          class="share"
+          width="45"
+          height="45"
+        ></amp-social-share>
+        {{ end }}
+        {{ with .Site.Params.ShareOnTumblr }}
+        <amp-social-share 
+          type="tumblr"
+          aria-label="Share on Tumblr" class="share"
+          width="45"
+          height="45"
+        ></amp-social-share>
+        {{ end }}
+        {{ with .Site.Params.ShareWithEmail }}
+        <amp-social-share
+          type="email"
+          aria-label="Share this with E-mail"
+          data-param-subject="Hello World"
+          data-param-body="What's up?"
+          class="share"
+          width="45"
+          height="45"
+        ></amp-social-share>
+        {{ end }}
+        {{ with .Site.Params.ShareOnWhatsapp }}
+        <amp-social-share 
+          type="whatsapp"
+          aria-label="Share on WhatsApp" 
+          class="share" 
+          width="45"
+          height="45"
+        ></amp-social-share>
+        {{ end }}
+        {{ with .Site.Params.ShareOnLine }}
+        <amp-social-share 
+          type="line"
+          aria-label="Share on Line"
+          class="share" 
+          width="45"
+          height="45"
+        ></amp-social-share>
+        {{ end }}
+        {{ with .Site.Params.ShareWithSystem }}
+        <amp-social-share 
+          type="system" 
+          aria-label="Share"
+          class="share" 
+          width="45"
+          height="45"
+        ></amp-social-share>
+        {{ end }}
+      </div>
+      <!-- End Socialbox -->
+      {{ end }}
+    <h2 class="m3 mb4 pb4 caps bold center h3">Related articles</h2>
+            
+                    <article class="ampstart-article-summary m0 relative">
+                      <a href="#">
+                        <amp-img
+                          width="360"
+                          height="400"
+                          layout="responsive"
+                          src="img/tower.jpg"
+                        ></amp-img>
+                        <header class="absolute bottom-0 right-0 left-0 center m3 p3">
+                          <h3 class="caps bold">Paris</h3>
+                          <h1 class="h2 my1">
+                            Nam vidit erant nonumes in, homero menandri praesent vix an
+                          </h1>
+                          <p class="h3 bold">28 comments</p>
+                        </header>
+                      </a>
+                    </article>
+                  </aside>
+                </main>
+                {{ end }}

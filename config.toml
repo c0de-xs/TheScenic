@@ -10,45 +10,61 @@ category = "categories"
 #TAXONOMY_NAME_SINGLE = "PLURAL" 
 # Add your own taxonomies 
 [params]
- # [GoogleFonts]
-   # enabled = "true"
-   #   [GoogleFonts.Font]
-    #    SelectedFont = "Raleway"
-  #    [GoogleFonts.Family]
-   #     FontFamily ="Raleway"
+# AMP COMPONENTS #
+  ampInstagram = "true"
+  ampCarousel = "true"
+  ampAccordion = "true"
+  ampSocialShare = "true"
+  ampGoogleAnalytics = "true"
+# END AMP MODULES #
 
 # FONTS #
  ## GOOGLE FONTS ##
    IwantGoogleFonts = "true" # If you don't want change true to false inside the quotes.
    NameOfGoogleFont = "Raleway" # Name of the Google font. For examples see the docs.
    NameOfGoogleFontFamily = "Raleway" # Name of the Google font family. For examples see the docs.
+ ## END GOOGLE FONTS ##
+
  ## CUSTOM FONTS ##
    # If you want to use your custom font set IwantGoogleFonts to false.
 
-#gfont = "Raleway"
-#fontfamily = "Raleway"
-ampInstagram = "true"
-ampCarousel = "true"
-ampAccordion = "true"
-ampSocialShare = "true"
-ampGoogleAnalytics = "true"
-Copyright = ""
-## COLORS ##
-dColor = "#333" # Dark Color. Initial value #fffcfc
-lColor = "#ccc" # Light Color. Initial value #333
-bColor = "#36465d" # Brand Color. Initial value #699
-fColor = "#000" # Font Color. Initial value #000
-red = "#933" #Initial value #933
-orange = "#fc0" #Initial value #fc0
-twitter = "https://www.twitter.com/AnimoPhoenicus"
-facebook = "https://www.facebook.com"
-instagram = "https://www.instagram.com"
-pinterest = "https://www.pinterest.com"
-youtube = "https://www.pinterest.com"
-reddit = "https://www.reddit.com"
-tik-tok = "https://www.tik-tok.com"
-snapchat = "https://www.snapchat.com"
-github = "https://www.github.com"
-gitlab = "https://www.gitlab.com"
+# END FONTS #
+
+# COLORS #
+  dColor = "#1a222d" # Dark Color. Initial value #fffcfc
+  lColor = "#ccc" # Light Color. Initial value #333
+  bColor = "#36465d" # Brand Color. Initial value #699
+  fColor = "#000" # Font Color. Initial value #000
+  red = "#933" #Initial value #933
+  orange = "#fc0" #Initial value #fc0
+# END COLORS #
+
+# SOCIAL SHARE #
+  ShareOnTwitter = "true"
+  ShareOnFacebook = "true"
+  ShareOnLinkedIn = "true"
+  ShareWithSystem = "true"
+  ShareOnPinterest = "true"
+  ShareOnTumblr = "true"
+  ShareWithEmail = "true"
+  ShareOnWhatsapp = "true"
+  ShareOnLine = "true"
+# END SOCIAL SHARE #
+
+# FOLLOW ON SOCIAL #
+  twitter = "https://www.twitter.com/AnimoPhoenicus"
+  facebook = "https://www.facebook.com"
+  instagram = "https://www.instagram.com"
+  pinterest = "https://www.pinterest.com"
+  youtube = "https://www.pinterest.com"
+  reddit = "https://www.reddit.com"
+  tik-tok = "https://www.tik-tok.com"
+  snapchat = "https://www.snapchat.com"
+  github = "https://www.github.com"
+  gitlab = "https://www.gitlab.com"
+# END FOLLOW ON SOCIAL #
+
+# FOOTER COPYRIGHT #
+  Copyright = ""
 
 ### EDIT BELOW THIS POINT ONLY IF YOU KNOW WHAT ARE YOU DOING ###
