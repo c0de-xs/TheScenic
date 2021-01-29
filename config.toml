@@ -10,8 +10,23 @@ category = "categories"
 #TAXONOMY_NAME_SINGLE = "PLURAL" 
 # Add your own taxonomies 
 [params]
-gfont = "Raleway"
-fontfamily = "Raleway"
+ # [GoogleFonts]
+   # enabled = "true"
+   #   [GoogleFonts.Font]
+    #    SelectedFont = "Raleway"
+  #    [GoogleFonts.Family]
+   #     FontFamily ="Raleway"
+
+# FONTS #
+ ## GOOGLE FONTS ##
+   IwantGoogleFonts = "true" # If you don't want change true to false inside the quotes.
+   NameOfGoogleFont = "Raleway" # Name of the Google font. For examples see the docs.
+   NameOfGoogleFontFamily = "Raleway" # Name of the Google font family. For examples see the docs.
+ ## CUSTOM FONTS ##
+   # If you want to use your custom font set IwantGoogleFonts to false.
+
+#gfont = "Raleway"
+#fontfamily = "Raleway"
 ampInstagram = "true"
 ampCarousel = "true"
 ampAccordion = "true"
