@@ -75,6 +75,7 @@
            {{ .Content }}
            {{ end }}
       <aside>
+{{ with eq .Site.Params.ampSocialShare "true"}}
         <!-- Start Socialbox -->
         <div class="m3 mb4">
         	<amp-social-share 
@@ -106,7 +107,7 @@ aria-label="Share"
           <amp-social-share type="system" aria-label="Share"></amp-social-share>
         </div>
         <!-- End Socialbox -->
-
+{{ end }}
         <h2 class="m3 mb4 pb4 caps bold center h3">Related articles</h2>
 
         <article class="ampstart-article-summary m0 relative">
