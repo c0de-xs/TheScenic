@@ -74,4 +74,58 @@
       <h2 class="m3 center h4 italic">Photo Galler</h2>
            {{ .Content }}
            {{ end }}
+      <aside>
+        <!-- Start Socialbox -->
+        <div class="m3 mb4">
+        	<amp-social-share 
+type="system" 
+aria-label="Share"
+></amp-social-share>
+          <amp-social-share
+            type="twitter"
+            aria-label="Share this on Twitter"
+          ></amp-social-share>
+          <amp-social-share
+            type="facebook"
+            aria-label="Share this on Facebook"
+            data-param-text="Hello world"
+            data-param-href="https://example.com/?ref=URL"
+            data-param-app_id="145634995501895"
+          ></amp-social-share>
+<amp-social-share type="system" aria-label="Share"></amp-social-share>
+          <amp-social-share
+            type="pinterest"
+            aria-label="Share this on pin trest"
+          ></amp-social-share>
+          <amp-social-share
+            type="email"
+            aria-label="Share this with E-mail"
+            data-param-subject="Hello World"
+            data-param-body="What's up?"
+          ></amp-social-share>
+          <amp-social-share type="system" aria-label="Share"></amp-social-share>
+        </div>
+        <!-- End Socialbox -->
+
+        <h2 class="m3 mb4 pb4 caps bold center h3">Related articles</h2>
+
+        <article class="ampstart-article-summary m0 relative">
+          <a href="#">
+            <amp-img
+              width="360"
+              height="400"
+              layout="responsive"
+              src="img/tower.jpg"
+            ></amp-img>
+            <header class="absolute bottom-0 right-0 left-0 center m3 p3">
+              <h3 class="caps bold">Paris</h3>
+              <h1 class="h2 my1">
+                Nam vidit erant nonumes in, homero menandri praesent vix an
+              </h1>
+              <p class="h3 bold">28 comments</p>
+            </header>
+          </a>
+        </article>
+      </aside>
+    </main>
   
