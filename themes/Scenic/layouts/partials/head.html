@@ -21,11 +21,13 @@
     {{ with .Site.Params.BackgroundColorLP }}--bgc: {{.}};{{ end }}
     {{ with .Site.Params.FontsColorLP }}--fc: {{.}};{{ end }}
     {{ with .Site.Params.MenuFontsColorLP }}--mfc: {{.}};{{ end }}
+    {{ with .Site.Params.AttentionColorLP }}--ac: {{.}};{{ end }}
     {{ else if eq .Site.Params.ChoosePalette "dark" }}
     {{ with .Site.Params.BrandColorDP }}--bc: {{.}};{{ end }}
     {{ with .Site.Params.BackgroundColorDP }}--bgc: {{.}};{{ end }}
     {{ with .Site.Params.FontsColorDP }}--fc: {{.}};{{ end }}
     {{ with .Site.Params.MenuFontsColorDP }}--mfc: {{.}};{{ end }}
+    {{ with .Site.Params.AttentionColorDP }}--ac: {{.}};{{ end }}
     {{ end }}
     {{ if eq .Site.Params.IwantGoogleFonts "true" }}--ff: {{ with .Site.Params.NameOfGoogleFontFamily }}"{{.}}"{{ end }}, "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;{{ end }}
   }
@@ -1167,7 +1169,7 @@ template {
       a,
       a:active,
       a:visited {
-        color: inherit;
+        color: var(--ac);
       }
       .ampstart-btn {
         font-family: inherit;
@@ -1824,15 +1826,22 @@ template {
         line-height: 1.14782;
       }
       .share {
+        {{ if eq .Site.Params.ChoosePalette "light" }}
         background-color: var(--bc);
-        color:#000;
+        {{ else if eq .Site.Params.ChoosePalette "dark"  }}
+        background-color: var(--bgc);
+        {{ end }}
         border-radius: 50%;
-    background-size: 70%; 
+        background-size: 70%;
+        border: 1px solid var(--bc);
     }
       .share:focus {
-  outline: none;
-  background-color: green;
-  ;
+       outline: none;
+       {{ if eq .Site.Params.ChoosePalette "light" }}
+       border: 3px dotted var(--bgc);
+        {{ else if eq .Site.Params.ChoosePalette "dark"  }}
+        border: 3px double var(--ac);
+        {{ end }}
 }
     </style>
     {{ with eq .Site.Params.ampGoogleAnalytics "true" }}

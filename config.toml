@@ -37,13 +37,15 @@ category = "categories"
   BackgroundColorLP = "#f8f8ff" # Initial Value #f8f8ff Header Background, Main background
   FontsColorLP = "#000013" # Initial Value #000013 Font Color.
   MenuFontsColorLP = "#f8f8ff" # Initial Value #f8f8ff
+  AttentionColorLP = "#400000" # 
  ## END LIGHT COLOR PALETTE
-  BrandColorDP = "red" # Initial Value #264653 Social Share Icons, sidebar menu, Sidebar Menu Icon, Site title
-  BackgroundColorDP = "blue" # Initial Value #f8f8ff Header Background, Main background
-  FontsColorDP = "orange" # Initial Value #000013 Font Color.
-  MenuFontsColorDP = "green" # Initial Value #f8f8ff
- ## DARK COLOR PALETTE ##
 
+ ## DARK COLOR PALETTE ##
+  BrandColorDP = "#bcccdc" # Initial Value #264653 Social Share Icons, sidebar menu, Sidebar Menu Icon, Site title
+  BackgroundColorDP = "#121212" # Initial Value #f8f8ff Header Background, Main background
+  FontsColorDP = "#bcccdc" # Initial Value #000013 Font Color.
+  MenuFontsColorDP = "#171f24" # Initial Value #f8f8ff
+  AttentionColorDP = "#ff6700" # 
  ## END DARK COLOR PALETTE ##
 # END COLORS #
 
