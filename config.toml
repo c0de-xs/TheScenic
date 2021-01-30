@@ -31,10 +31,11 @@ category = "categories"
 # END FONTS #
 
 # COLORS #
-  dColor = "#1a222d" # Dark Color. Initial value #fffcfc
-  lColor = "#ccc" # Light Color. Initial value #333
-  bColor = "#36465d" # Brand Color. Initial value #699
-  fColor = "#000" # Font Color. Initial value #000
+  BrandColor = "#264653"
+  DarkColor = "#1a222d" # Dark Color. Initial value #fffcfc
+  LightColor = "#ccc" # Light Color. Initial value #333
+  Color = "#36465d" # Brand Color. Initial value #699
+  FontsColor = "#000" # Font Color. Initial value #000
   red = "#933" #Initial value #933
   orange = "#fc0" #Initial value #fc0
 # END COLORS #
