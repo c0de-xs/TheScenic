@@ -21,7 +21,7 @@ Est quando utinam feugiat id, unum tritani splendide his ne. Te dico solum quaeq
 
 
 
-{{<figure url="https://images.pexels.com/photos/4737039/pexels-photo-4737039.jpeg?cs=srgb&dl=pexels-adriano-brodbeck-4737039.jpg&fm=jpg"  description="alt test" caption="CAPTION" credit="CREDIT">}}
+{{<figure url="https://images.pexels.com/photos/4737039/pexels-photo-4737039.jpeg?cs=srgb&dl=pexels-adriano-brodbeck-4737039.jpg&fm=jpg"  description="alt test" caption="wWCAPTION" credit="CREDITWw">}}
 
  Vix et adhuc nulla scripserit. Ut pro soleat salutatus. Nam vidit erant nonumes in, homero menandri praesent vix an. Has an causae vidisse fierent, vim dolorum blandit definitiones no, nostro persecuti an his. Ius choro repudiare ei, definiebas argumentum ex mei, an natum mandamus efficiendi his.
 

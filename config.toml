@@ -31,13 +31,20 @@ category = "categories"
 # END FONTS #
 
 # COLORS #
-  BrandColor = "#264653"
-  DarkColor = "#1a222d" # Dark Color. Initial value #fffcfc
-  LightColor = "#ccc" # Light Color. Initial value #333
-  Color = "#36465d" # Brand Color. Initial value #699
-  FontsColor = "#000" # Font Color. Initial value #000
-  red = "#933" #Initial value #933
-  orange = "#fc0" #Initial value #fc0
+ ChoosePalette = "dark" # light or dark
+ ## LIGHT COLOR PALETTE ##
+  BrandColorLP = "#264653" # Initial Value #264653 Social Share Icons, sidebar menu, Sidebar Menu Icon, Site title
+  BackgroundColorLP = "#f8f8ff" # Initial Value #f8f8ff Header Background, Main background
+  FontsColorLP = "#000013" # Initial Value #000013 Font Color.
+  MenuFontsColorLP = "#f8f8ff" # Initial Value #f8f8ff
+ ## END LIGHT COLOR PALETTE
+  BrandColorDP = "red" # Initial Value #264653 Social Share Icons, sidebar menu, Sidebar Menu Icon, Site title
+  BackgroundColorDP = "blue" # Initial Value #f8f8ff Header Background, Main background
+  FontsColorDP = "orange" # Initial Value #000013 Font Color.
+  MenuFontsColorDP = "green" # Initial Value #f8f8ff
+ ## DARK COLOR PALETTE ##
+
+ ## END DARK COLOR PALETTE ##
 # END COLORS #
 
 # SOCIAL SHARE #
