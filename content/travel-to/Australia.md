@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Australia"
+date: 2021-01-30T16:39:08+01:00
 draft: true # Set to false to publish
  
 description: "Put your description here" 

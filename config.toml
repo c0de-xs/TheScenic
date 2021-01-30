@@ -1,12 +1,13 @@
 theme = "Scenic"
 # Edit the following values between the quotation marks ("")
-baseURL = "https://www.code-xs.cloud" # Your site url
+baseURL = "http://localhost:1313" # Your site url
 languageCode = "en_US" # Your site's main language
 title = "The Hugo Scenic" # Your site's title
 
 [taxonomies] 
 tag = "tags" 
 category = "categories" 
+article = "articles"
 #TAXONOMY_NAME_SINGLE = "PLURAL" 
 # Add your own taxonomies 
 [params]
