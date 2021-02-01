@@ -18,8 +18,8 @@
 {{ if and (eq .Site.Params.IwantCustomGonts "true) (eq .Site.Params.IwantGoogleFonts "false" }}
 @font-face {
 font-family:"cf";
-{{ with .Site.Params.FontsWOFF2 }}src: url("{{ . }}") format("woff2"),{{ end }}
-{{ with .Site.Params FontsWOFF }}url("{{ . }}") format("woff");{{ end }}
+{{ with .Site.Params.FontsWOFF2 }}src: url("fonts/{{ . }}") format("woff2"),{{ end }}
+{{ with .Site.Params FontsWOFF }}url("fonts/{{ . }}") format("woff");{{ end }}
 }{{ end }}
   :root {
     {{ if eq .Site.Params.ChoosePalette "light" }}
