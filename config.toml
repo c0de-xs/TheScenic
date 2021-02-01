@@ -28,10 +28,9 @@ article = "articles"
  ## END GOOGLE FONTS ##
 
  ## CUSTOM FONTS ##
-   IwantCustomFonts = "false"
-   # If you want to use your custom font set IwantGoogleFonts to false.
-   FontsWOFF = ""
-   FontsWOFF2 = ""
+   IwantCustomFonts = "false" # If you want to use custom fonts set IwantGoogleFonts to false and IwantCustomFonts to true..
+   FontsWOFF = "hachimarupop-regular-webfont.woff"
+   FontsWOFF2 = "hachimarupop-regular-webfont.woff2"
  ## END CUSTOM FONTS ##
 
 # END FONTS #
