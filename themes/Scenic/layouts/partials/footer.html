@@ -201,17 +201,14 @@
         ></a>
       </li>
     </ul>
+    
     <nav class="ampstart-footer-nav">
       <ul class="list-reset flex flex-wrap mb3">
+        {{ $currentPage := . }}
+      {{ range .Site.Menus.footer }}
         <li class="px1">
-          <a class="text-decoration-none ampstart-label" href="#">About</a>
-        </li>
-        <li class="px1">
-          <a class="text-decoration-none ampstart-label" href="#">Contact</a>
-        </li>
-        <li class="px1">
-          <a class="text-decoration-none ampstart-label" href="#">Terms</a>
-        </li>
+          <a class="text-decoration-none ampstart-label"{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}} href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        </li>{{ end }}
       </ul>
     </nav>
 {{ if .Site.Params.Copyright }}

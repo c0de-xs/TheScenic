@@ -14,12 +14,12 @@
   <!-- END AMP Custom Components-->
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <!--Start Custom CSS-->
-<style amp-custom="">
-{{ if and (eq .Site.Params.IwantCustomGonts "true) (eq .Site.Params.IwantGoogleFonts "false" }}
+<style amp-custom>
+{{ if and (eq .Site.Params.IwantCustomFonts "true") (eq .Site.Params.IwantGoogleFonts "false") }}
 @font-face {
 font-family:"cf";
-{{ with .Site.Params.FontsWOFF2 }}src: url("fonts/{{ . }}") format("woff2"),{{ end }}
-{{ with .Site.Params FontsWOFF }}url("fonts/{{ . }}") format("woff");{{ end }}
+src: url("../fonts/{{ with .Site.Params.FontsWOFF2 }}{{ . }}{{ end }}") format("woff2"),
+url("../fonts/{{ with .Site.Params.FontsWOFF }}{{ . }}{{ end }}") format("woff");
 }{{ end }}
   :root {
     {{ if eq .Site.Params.ChoosePalette "light" }}
@@ -35,9 +35,9 @@ font-family:"cf";
     {{ with .Site.Params.MenuFontsColorDP }}--mfc: {{.}};{{ end }}
     {{ with .Site.Params.AttentionColorDP }}--ac: {{.}};{{ end }}
     {{ end }}
-    {{ if and (eq .Site.Params.IwantGoogleFonts "true") (eq .Site.Params.IwantCustomFonts "false") }}--ff: {{ with .Site.Params.NameOfGoogleFontFamily }}"{{.}}"{{ end }}, "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
+    {{ if and (eq .Site.Params.IwantGoogleFonts "true") (eq .Site.Params.IwantCustomFonts "false") }}--ff:{{ with .Site.Params.NameOfGoogleFontFamily }}{{ . }}{{ end }}, "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
 {{ else if and (eq .Site.Params.IwantGoogleFonts "false") (eq .Site.Params.IwantCustomFonts "true") }}--ff: "cf", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
-{{ else if and (eq .Site.Params.IwantGoogleFonts "false") (eq .Site.Params.IwantCustomFonts "false") }}--ff: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
+{{ else }}--ff: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
 {{ end }}
   }
 
@@ -1143,7 +1143,7 @@ template {
       }
       .h3,
       h3 {
-        font-size: 0.6875rem;
+        font-size: 1rem;
         line-height: 1.81818;
       }
       .h4,
@@ -1860,7 +1860,7 @@ template {
 {{ end }}
 <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="..//mages/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
 <link rel="manifest" href="../images/favicons/site.webmanifest">
 <link rel="mask-icon" href="../images/favicons/safari-pinned-tab.svg" color="#6d7b80">
 <meta name="msapplication-TileColor" content="#da532c">
