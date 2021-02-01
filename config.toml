@@ -20,6 +20,7 @@ article = "articles"
 # END AMP MODULES #
 
 # FONTS #
+
  ## GOOGLE FONTS ##
    IwantGoogleFonts = "true" # If you don't want change true to false inside the quotes.
    NameOfGoogleFont = "Raleway" # Name of the Google font. For examples see the docs.
@@ -27,7 +28,12 @@ article = "articles"
  ## END GOOGLE FONTS ##
 
  ## CUSTOM FONTS ##
+   IwantCustomFonts = "false"
    # If you want to use your custom font set IwantGoogleFonts to false.
+   FontsWOFF = ""
+   FontsOTF = ""
+   FontsEOT = ""
+ ## END CUSTOM FONTS ##
 
 # END FONTS #
 
