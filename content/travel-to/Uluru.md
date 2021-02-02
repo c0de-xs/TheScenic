@@ -2,7 +2,7 @@
 title: "Uluru"
 date: 2021-01-30T16:39:08+01:00
 draft: true # Set to false to publish
- 
+Author: "John Wayne" 
 description: "Put your description here" 
 summary: "Put your summary here" 
 tags: [Australia] # Add tags inside the brackets ex. ["Tag1", "Tag2"] 

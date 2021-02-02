@@ -1,25 +1,25 @@
 
 {{ define "main" }}
-{{ if eq .Page.Params.heroImage "true"}}
+{{ if eq .Page.Params.HeroImage "true"}}
 <div class="center">
 <!-- Start Fullpage Hero -->
   <figure class="ampstart-image-fullpage-hero m0 relative mb4">
     <amp-img
       width="404"
       height="720"
-      {{ with .Page.Params.heroImageDescription }}
+      {{ with .Page.Params.HeroImageDescription }}
       alt="{{ . }}"{{ end }}
       layout="responsive"
-      {{ with .Page.Params.heroImageUrl }}
+      {{ with .Page.Params.HeroImageUrl }}
       src="{{ . }}"{{ end }}
       media="(max-width: 415px)"
       ></amp-img>
       <amp-img
         height="720"
-        {{ with .Page.Params.heroImageDescription }}
+        {{ with .Page.Params.HeroImageDescription }}
         alt="{{ . }}"{{ end }}
         layout="fixed-height"
-        {{ with .Page.Params.heroImageUrl }}
+        {{ with .Page.Params.HeroImageUrl }}
         src="{{ . }}"{{ end }}
         media="(min-width: 416px)"
       ></amp-img>
@@ -32,7 +32,7 @@
           </h1>
 
           <span class="ampstart-image-credit h4">
-           {{ with .Page.Params.author }} By
+           {{ with .Page.Params.Author }} By
            
             {{ . }},<br>{{ end }} on
             {{ .Date.Format "Jan 2, 2006" }}
