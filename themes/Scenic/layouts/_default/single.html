@@ -70,13 +70,13 @@
   </div>
   {{ end }}
   <main id="content" role="main">
-    <article class="photo-article">
-      <h2 class="m3 center h4 italic">Photo Galler</h2>
-           {{ .Content }}
+    <article class="{{ range .Params.categories }}{{ . }}{{ end }}">
+      <h2 class="m3 center h5 italic">{{ range .Params.categories }}{{ . }}{{ end }}-{{ range .Params.tags }}{{ . }}{{ end }}</h2>
+           <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap{{ else }}no-dropcap{{ end }}">{{ .Content }}</div>
             {{ if eq .Site.Params.ampSocialShare "true"}}
       <aside>   
       <!-- Start Socialbox -->
-      <div class="m3 mb4">
+      <div class="center m3 mb4">
       {{ with .Site.Params.ShareOnTwitter }}
         <amp-social-share
           type="twitter"

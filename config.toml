@@ -7,7 +7,6 @@ title = "The Hugo Scenic" # Your site's title
 [taxonomies] 
 tag = "tags" 
 category = "categories" 
-article = "articles"
 #TAXONOMY_NAME_SINGLE = "PLURAL" 
 # Add your own taxonomies 
 [params]
@@ -34,11 +33,12 @@ article = "articles"
  ## END CUSTOM FONTS ##
  
  ## FONT SIZE ##
- FontSize = "18px"
+   FontSize = "18px"
+ ## END FONT SIZE ##
 # END FONTS #
 
 # COLORS #
- ChoosePalette = "dark" # light or dark
+ ChoosePalette = "light" # light or dark
  ## LIGHT COLOR PALETTE ##
   BrandColorLP = "#264653" # Initial Value #264653 Social Share Icons, sidebar menu, Sidebar Menu Icon, Site title
   BackgroundColorLP = "#f8f8ff" # Initial Value #f8f8ff Header Background, Main background
