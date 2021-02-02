@@ -32,7 +32,9 @@ article = "articles"
    FontsWOFF = "hachimarupop-regular-webfont.woff"
    FontsWOFF2 = "hachimarupop-regular-webfont.woff2"
  ## END CUSTOM FONTS ##
-
+ 
+ ## FONT SIZE ##
+ FontSize = "18px"
 # END FONTS #
 
 # COLORS #
