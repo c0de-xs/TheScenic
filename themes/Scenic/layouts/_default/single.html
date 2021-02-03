@@ -73,7 +73,7 @@
     <article class="{{ range .Params.categories }}{{ . }}{{ end }}">
       <h2 class="m3 center h5 italic">{{ range .Params.categories }}{{ . }}{{ end }}-{{ range .Params.tags }}{{ . }}{{ end }}</h2>
            <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap{{ else }}no-dropcap{{ end }}">{{ .Content }}</div>
-            {{ if eq .Site.Params.ampSocialShare "true"}}
+            {{ if eq .Site.Params.IwantSocialShareIcons "true"}}
       <aside>   
       <!-- Start Socialbox -->
       <div class="center m3 mb4">

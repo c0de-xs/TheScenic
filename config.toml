@@ -56,7 +56,10 @@ category = "categories"
  ## END DARK COLOR PALETTE ##
 # END COLORS #
 
-# SOCIAL SHARE #
+# SOCIAL ICONS #
+
+ ## SOCIAL SHARE #
+  IwantSocialShareIcons = "true"
   ShareOnTwitter = "true"
   ShareOnFacebook = "true"
   ShareOnLinkedIn = "true"
@@ -66,25 +69,48 @@ category = "categories"
   ShareWithEmail = "true"
   ShareOnWhatsapp = "true"
   ShareOnLine = "true"
-# END SOCIAL SHARE #
+ ## END SOCIAL SHARE ##
 
-# FOLLOW ON SOCIAL #
-  twitter = "https://www.twitter.com/AnimoPhoenicus"
-  facebook = "https://www.facebook.com"
-  instagram = "https://www.instagram.com"
-  pinterest = "https://www.pinterest.com"
-  youtube = "https://www.pinterest.com"
-  reddit = "https://www.reddit.com"
-  tik-tok = "https://www.tik-tok.com"
-  snapchat = "https://www.snapchat.com"
-  github = "https://www.github.com"
-  gitlab = "https://www.gitlab.com"
+ ## SOCIAL FOLLOW SIDEBAR ##
+  IwantSocialFollowIconsAtSidebar = "true"
+  SidebarTwitter = "https://www.twitter.com/AnimoPhoenicus"
+  SidebarFacebook = "https://www.facebook.com"
+  SidebarInstagram = "https://www.instagram.com"
+  SidebarYoutube = "https://www.youtube.com"
+  SidebarPinterest = "https://www.pinterest.com"
+  SidebarTumblr = "https://www.pinterest.com"
+  SidebarReddit = "https://www.reddit.com"
+  SidebarTiktok = "https://www.tiktok.com/"
+  SidebarSnapchat = "https://www.snapchat.com"
+  SidebarGithub = "https://www.github.com"
+  SidebarGitlab = "https://www.gitlab.com"
+  SidebarEmail = "test@test.com"
 # END FOLLOW ON SOCIAL #
+
+ ## SOCIAL FOLLOW FOOTER ##
+  IwantSocialFollowIconsAtFooter = "true"
+  FooterTwitter = "https://www.twitter.com/AnimoPhoenicus"
+  FooterFacebook = "https://www.facebook.com"
+  FooterInstagram = "https://www.instagram.com"
+  FooterYoutube = "https://www.youtube.com"
+  FooterPinterest = "https://www.pinterest.com"
+  FooterTumblr = "https://www.pinterest.com"
+  FooterReddit = "https://www.reddit.com"
+  FooterTiktok = "https://www.tiktok.com/"
+  FooterSnapchat = "https://www.snapchat.com"
+  FooterGithub = "https://www.github.com"
+  FooterGitlab = "https://www.gitlab.com"
+  FooterEmail = "test@test.com"
+ ## END FOLLOW ON SOCIAL ##
+
+# END SOCIAL ICONS #
+
 
 # FOOTER COPYRIGHT #
   Copyright = ""
-# MENUS#
+# END FOOTER COPYRIGHT
 
+# MENUS #
 [menu]
  ## SIDEBAR MENU ##
   [[menu.sidebar]]
@@ -145,4 +171,6 @@ category = "categories"
     url = "/policy/"
     weight = -100
  ## END FOOTER MENU ##
+
+# END MENUS #
 ### EDIT BELOW THIS POINT ONLY IF YOU KNOW WHAT ARE YOU DOING ###

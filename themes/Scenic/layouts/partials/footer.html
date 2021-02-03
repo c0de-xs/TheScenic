@@ -1,10 +1,12 @@
 <footer class="ampstart-footer flex flex-column items-center px3">
+  {{ if eq .Site.Params.IwantSocialFollowIconsAtFooter "true"}}
     <ul
       class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4"
     >
+    {{ with .Site.Params.FooterTwitter }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to AMP HTML Twitter"
@@ -19,10 +21,11 @@
               class="ampstart-icon ampstart-icon-twitter"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterFacebook }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to AMP HTML Facebook"
@@ -37,10 +40,11 @@
               class="ampstart-icon ampstart-icon-fb"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterPinterest }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to AMP HTML pin trest"
@@ -55,10 +59,11 @@
               class="ampstart-icon ampstart-icon-pinterest"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterEmail}}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to AMP HTML E-mail"
@@ -73,10 +78,29 @@
               class="ampstart-icon ampstart-icon-email"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterYoutube }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
+          target="_blank"
+          class="inline-block p1"
+          aria-label="Link to Youtube"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 32 32"
+          >
+            <title>YouTube</title>
+        <path d="M31.327 8.273a4.026 4.026 0 00-2.756-2.777l-.028-.007c-2.493-.668-12.528-.668-12.528-.668s-10.009-.013-12.528.668A4.026 4.026 0 00.71 8.245l-.007.028C.26 10.554.007 13.176.007 15.858v.163-.008.126c0 2.682.253 5.304.737 7.845l-.041-.26a4.026 4.026 0 002.756 2.777l.028.007c2.491.669 12.528.669 12.528.669s10.008 0 12.528-.669a4.026 4.026 0 002.777-2.756l.007-.028c.425-2.233.668-4.803.668-7.429l-.001-.297v.015l.001-.31c0-2.626-.243-5.196-.708-7.687l.04.258zM12.812 20.801V11.21l8.352 4.803z" class="ampstart-icon ampstart-icon-email"
+      ></path></svg
+  ></a>
+</li>{{ end }}
+      {{ with .Site.Params.FooterInstagram }}
+      <li>
+        <a
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to Instagram"
@@ -91,10 +115,11 @@
               class="ampstart-icon ampstart-icon-email"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterReddit }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to Reddit"
@@ -109,10 +134,11 @@
               class="ampstart-icon ampstart-icon-email"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterTumblr }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to Tumblr"
@@ -127,10 +153,11 @@
               class="ampstart-icon ampstart-icon-email"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterTiktok }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to Tik Tok"
@@ -145,10 +172,11 @@
               class="ampstart-icon ampstart-icon-email"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterSnapchat }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to Snapchat"
@@ -163,10 +191,11 @@
               class="ampstart-icon ampstart-icon-email"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterGithub }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to GitHub"
@@ -181,10 +210,11 @@
               class="ampstart-icon ampstart-icon-email"
             ></path></svg
         ></a>
-      </li>
+      </li>{{ end }}
+      {{ with .Site.Params.FooterGitlab }}
       <li>
         <a
-          href="#"
+          href="{{.}}"
           target="_blank"
           class="inline-block p1"
           aria-label="Link to GitLab"
@@ -199,8 +229,8 @@
               class="ampstart-icon ampstart-icon-email"
             ></path></svg
         ></a>
-      </li>
-    </ul>
+      </li>{{ end }}
+    </ul>{{ end }}
     
     <nav class="ampstart-footer-nav">
       <ul class="list-reset flex flex-wrap mb3">
