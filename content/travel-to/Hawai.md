@@ -1,12 +1,12 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Hawai"
+date: 2021-02-03T16:51:36+01:00
 draft: true # Set to false to publish
 Author: 
 description: "Put your description here" 
 summary: "Put your summary here" 
-tags: [] 
-categories: [] 
+tags: [Hawai] 
+categories: [Traver 3] 
 ## HERO IMAGE ##
 # You have to fill the heroImageUrl and the heroImageDescription.
 HeroImage: "false" # Change to true if you want to enable hero images
@@ -16,3 +16,4 @@ HeroImageDescription: "HERO IMAGE DESCRIPTION"
 EnableDropcap: "true" #Set to false to disable dropcap
 
 ---
+testtts

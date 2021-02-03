@@ -38,7 +38,7 @@ category = "categories"
 # END FONTS #
 
 # COLORS #
- ChoosePalette = "light" # light or dark
+ ChoosePalette = "dark" # light or dark
  ## LIGHT COLOR PALETTE ##
   BrandColorLP = "#264653" # Initial Value #264653 Social Share Icons, sidebar menu, Sidebar Menu Icon, Site title
   BackgroundColorLP = "#f8f8ff" # Initial Value #f8f8ff Header Background, Main background
@@ -83,35 +83,66 @@ category = "categories"
 
 # FOOTER COPYRIGHT #
   Copyright = ""
+# MENUS#
 
 [menu]
+ ## SIDEBAR MENU ##
+  [[menu.sidebar]]
+    identifier = "about"
+    title = "About"
+    name = "About"
+    url = "/about/"
+    weight = -100
+  
+  [[menu.sidebar]]
+    identifier = "contact"
+    title = "Contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = -100
+  
+  [[menu.sidebar]]
+    identifier = "disclaimer"
+    title = "Disclaimer"
+    name = "Disclaimer"
+    url = "/disclaimer/"
+    weight = -100
+  
+  [[menu.sidebar]]
+    identifier = "policy"
+    title = "Policy"
+    name = "Policy"
+    url = "/policy/"
+    weight = -100
+ ## END SIDEBAR MENU ##
 
+ ## FOOTER MENU ## 
   [[menu.footer]]
     identifier = "about"
     title = "About"
-    name = "about"
+    name = "About"
     url = "/about/"
     weight = -100
   
   [[menu.footer]]
     identifier = "contact"
     title = "Contact"
-    name = "contact"
+    name = "Contact"
     url = "/contact/"
     weight = -100
   
   [[menu.footer]]
     identifier = "disclaimer"
     title = "Disclaimer"
-    name = "disclaimer"
+    name = "Disclaimer"
     url = "/disclaimer/"
     weight = -100
   
   [[menu.footer]]
     identifier = "policy"
     title = "Policy"
-    name = "policy"
+    name = "Policy"
     url = "/policy/"
     weight = -100
-
+ ## END FOOTER MENU ##
 ### EDIT BELOW THIS POINT ONLY IF YOU KNOW WHAT ARE YOU DOING ###
