@@ -11,14 +11,34 @@
 </div>
   </div>
 <main id="content" role="main">
-    <article class="photo-article">
-      <h2 class="m3 center h4 italic">Photo Galler</h2>
-           {{ .Content }}
-            <ul>
-                <!-- Ranges through content/posts/*.md -->
-                {{ range .Pages }}
-                    <li>
-                        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+  <article class="list">
+    <h2 class="m3 center h4 italic">Category</h2>
+      {{ .Content }}
+      <ul>
+      {{ range .Pages }}
+        <li class="mb3 li">
+          {{ if eq .Page.Params.HeroImage "true"}}
+          <figure class="ampstart-image-fullpage-hero m0 relative mb4 b">
+            <amp-img width="200" height="200" {{ with .Page.Params.HeroImageDescription }} alt="{{ . }}"{{ end }} layout="responsive" {{ with .Page.Params.HeroImageUrl }} src="{{ . }}"{{ end }} media="(max-width: 415px)"></amp-img>
+            <amp-img height="200" {{ with .Page.Params.HeroImageDescription }} alt="{{ . }}"{{ end }} layout="fixed-height" {{ with .Page.Params.HeroImageUrl }} src="{{ . }}"{{ end }} media="(min-width: 416px)"></amp-img>
+              <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+                <header class="p3 center">
+                  <h2 class="ampstart-fullpage-hero-heading mb3"><span class="ampstart-fullpage-hero-heading-text"><a class="brand" href="{{.Permalink}}">{{ .Title}}</a></span></h2>
+                    <span class="ampstart-image-credit h4 center"> {{ with .Page.Params.Author }} By {{ . }},<br>{{ end }} on {{ .Date.Format "Jan 2, 2006" }}</span>
+                </header>
+              </figcaption>
+            </figure>{{ else }}
+            <figure class="ampstart-image-fullpage-hero m0 relative mb4 b">
+              <amp-img width="200" height="200" alt="Placeholder Background" layout="responsive" src="../images/scenic/bg.png" media="(max-width: 415px)"></amp-img>
+              <amp-img height="200" alt="Placeholder Background" layout="fixed-height" src="../images/scenic/bg.png" media="(min-width: 416px)"></amp-img>
+                <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+                  <header class="p3 center">
+                    <h2 class="ampstart-fullpage-hero-heading mb3"><span class="ampstart-fullpage-hero-heading-text"><a class="brand" href="{{.Permalink}}">{{ .Title}}</a></span></h2>
+                      <span class="ampstart-image-credit h4 center"> {{ with .Page.Params.Author }} By {{ . }},<br>{{ end }} on {{ .Date.Format "Jan 2, 2006" }}</span>
+                  </header>
+                </figcaption>
+              </figure>
+            {{ end }}
                     </li>
                 {{ end }}
                 </ul>

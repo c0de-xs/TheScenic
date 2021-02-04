@@ -220,9 +220,7 @@ template {
       .font-size-inherit {
         font-size: inherit;
       }
-      .text-decoration-none {
-        text-decoration: none;
-      }
+      
       .bold {
         font-weight: 700;
       }
@@ -1840,6 +1838,13 @@ p {
         overflow: hidden;
         margin: 0.4rem 0.5rem 0rem;
 }
+.brand, .brand:active, .brand:visited  {
+        text-decoration: none;
+        color: var(--bc);
+      }
+.li{list-style-type: none;}
+.b { border:1px solid var(--bc);}
+.h {height: 200px;}
     </style>
     {{ with eq .Site.Params.ampGoogleAnalytics "true" }}
     <meta name="amp-google-client-id-api" content="googleanalytics" />
