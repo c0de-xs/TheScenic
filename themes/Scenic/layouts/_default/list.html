@@ -29,8 +29,8 @@
               </figcaption>
             </figure>{{ else }}
             <figure class="ampstart-image-fullpage-hero m0 relative mb4 b">
-              <amp-img width="200" height="200" alt="Placeholder Background" layout="responsive" src="../images/scenic/bg.png" media="(max-width: 415px)"></amp-img>
-              <amp-img height="200" alt="Placeholder Background" layout="fixed-height" src="../images/scenic/bg.png" media="(min-width: 416px)"></amp-img>
+              <amp-img width="200" height="200" alt="Placeholder Background" layout="responsive" src="{{ "/" | absURL }}images/scenic/bg.png" media="(max-width: 415px)"></amp-img>
+              <amp-img height="200" alt="Placeholder Background" layout="fixed-height" src="{{ "/" | absURL }}images/scenic/bg.png" media="(min-width: 416px)"></amp-img>
                 <figcaption class="absolute top-0 right-0 bottom-0 left-0">
                   <header class="p3 center">
                     <h2 class="ampstart-fullpage-hero-heading mb3"><span class="ampstart-fullpage-hero-heading-text"><a class="brand" href="{{.Permalink}}">{{ .Title}}</a></span></h2>
