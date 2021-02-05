@@ -50,7 +50,7 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.sidebar }}
     <li class="ampstart-faq-item">
-      <a {{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }} active{{end}} href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+      <a class="mfc"{{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }} active{{end}} href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
     </li>{{ end }}
   </ul>
 </nav>

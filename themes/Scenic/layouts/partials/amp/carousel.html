@@ -1,49 +1,11 @@
-        <!-- Start carousel -->
-        <amp-carousel
-          width="756"
-          height="638"
-          layout="responsive"
-          type="slides"
-          class="mb4"
-        >
-          <!-- Start Image with Caption -->
-          <figure class="ampstart-image-with-caption m0 relative mb4">
-            <amp-img
-              src="img/cars.jpg"
-              width="756"
-              height="520"
-              alt="New York cars."
-              layout="responsive"
-              class=""
-            ></amp-img>
-            <figcaption class="h5 mt1 px3">
-              New York cars.
-              <span class="ampstart-image-credit block bold">
-                Taken by
-                <a href="#" role="author">Jack Alexander</a>
-              </span>
-            </figcaption>
-          </figure>
-          <!-- End Image with Caption -->
-
-          <!-- Start Image with Caption -->
-          <figure class="ampstart-image-with-caption m0 relative mb4">
-            <amp-img
-              src="img/paris1.jpg"
-              width="756"
-              height="520"
-              alt="New York street"
-              layout="responsive"
-              class=""
-            ></amp-img>
-            <figcaption class="h5 mt1 px3">
-              New York street
-              <span class="ampstart-image-credit block bold">
-                Taken by
-                <a href="#" role="author">Jack Alexander</a>
-              </span>
-            </figcaption>
-          </figure>
-          <!-- End Image with Caption -->
-        </amp-carousel>
-        <!-- End carousel -->
+<!-- Start carousel -->
+{{ $path := print "/static/images/" (.src) }}
+{{ $url  := print "/images/" (.src) }}
+<amp-carousel width="756" height="638" layout="responsive" type="slides" class="mb4">
+{{ range (readDir $path)  }} 
+{{ $src := print $url "/" .Name }}
+<!-- Start Image -->
+  <figure class="ampstart-image-with-caption m0 relative mb4">
+    <amp-img src="{{ $src }}" width="756" height="520" alt="{{ .Name }}" layout="responsive" class=""></amp-img>
+  </figure>{{ end }}
+</amp-carousel>
