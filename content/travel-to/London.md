@@ -1,7 +1,7 @@
 ---
 title: "T fffffffffffff long title"
 date: 2021-02-03T16:45:43+01:00
-draft: true # Set to false to publish
+draft: false # Set to false to publish
 Author: "John"
 description: "Put your description here" 
 summary: "Put your summary here" 

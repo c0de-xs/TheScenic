@@ -168,7 +168,7 @@
       <!-- End Socialbox -->
       {{ end }}
       {{ $related := .Site.RegularPages.RelatedIndices .  "categories" | first 1}}
-      {{ with $related }}{{ $related }}
+      {{ with $related }}
     <h2 class="m3 mb4 pb4 caps bold center h3">Related article</h2>
     {{ range . }}
 	<article class="ampstart-article-summary m0 relative">

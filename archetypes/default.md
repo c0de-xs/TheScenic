@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true # Set to false to publish
+draft: "false" # Set to false to publish
 Author: ""
 description: "Put your description here" 
 summary: "Put your summary here" 

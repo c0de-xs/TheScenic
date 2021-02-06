@@ -1,6 +1,6 @@
 theme = "Scenic"
 # Edit the following values between the quotation marks ("")
-baseURL = "http://localhost:1313" # Your site url
+baseURL = "" # Your site url
 languageCode = "en_US" # Your site's main language
 title = "The Hugo Scenic" # Your site's title
 

@@ -1229,10 +1229,11 @@ template {
         white-space: nowrap;
       }
       .amp-carousel-button-next {
-        background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Next</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="%23FFF" fill-rule="evenodd"/></svg>');
+        background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Next</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="%23FF8" fill-rule="evenodd"/></svg>');
       }
       .amp-carousel-button-prev {
         background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Previous</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="%23FFF" fill-rule="evenodd"/></svg>');
+    
       }
       .ampstart-dropdown {
         min-width: 200px;
@@ -1831,13 +1832,21 @@ template {
 p {
   margin-bottom: 1rem;
 }
-.dropcap p:first-child:first-letter {
+.dropcap p:first-child::first-letter {
         color: var(--ac);
         font-size: 3.2rem;
         font-weight: bolder;
         float: left;
         overflow: hidden;
         margin: 0.4rem 0.5rem 0rem;
+}
+blockquote {
+  padding-left: 1rem;
+  padding-top:1rem;
+  font-size: 1.5rem;
+  color:var(--bc);
+  border-top: 4px double var(--ac);
+  border-bottom: 4px double var(--ac);
 }
 .brand, .brand:active, .brand:visited  {
         text-decoration: none;
@@ -1853,6 +1862,9 @@ p {
 .error { 
   color:var(--ac);
   border: 3px double;
+}
+hr {
+    border: 3px double var(--bc);
 }
     </style>
     {{ with eq .Site.Params.ampGoogleAnalytics "true" }}
