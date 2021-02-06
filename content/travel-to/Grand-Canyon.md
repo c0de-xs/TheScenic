@@ -14,22 +14,16 @@ HeroImageUrl: "/travel-to/Grand-Canyon/grand-canyon.jpg"
 HeroImageDescription: "Photo of Grand Canyon by Pixabay"
 ## DROPCAP ##
 EnableDropcap: "true" #Set to false to disable dropcap
-resources:
-- src: 'documents/guide.pdf'
-  name: Instruction Guide
-  params:
-  ref: '90564568'
-- src: 'documents/checklist.pdf'
-  name: Document Checklist
-  params:
-  ref: '90564572'
-- src: photo_specs.pdf
-  name: Photo Specifications
-  params:
-  ref: '90564687'
+Resources:
+- type: image
+  url: /images/test.jpg
+  description: test
+  caprion: This is a image
+  credit: From Wikipedia
+  
 ---
 The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona, United States. The Grand Canyon is *277 miles* (446 km) long, up to *18 miles* (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters).
-
+{{<caption-carousel>}}
 The canyon and adjacent rim are contained within Grand Canyon National Park, the Kaibab National Forest, Grand Canyon–Parashant National Monument, the Hualapai Indian Reservation, the Havasupai Indian Reservation and the Navajo Nation. President Theodore Roosevelt was a major proponent of preservation of the Grand Canyon area and visited it on numerous occasions to hunt and enjoy the scenery.
 
 Nearly two billion years of Earth's geological history have been exposed as the Colorado River and its tributaries cut their channels through layer after layer of rock while the Colorado Plateau was uplifted. While some aspects about the history of incision of the canyon are debated by geologists,several recent studies support the hypothesis that the Colorado River established its course through the area about 5 to 6 million years ago. Since that time, the Colorado River has driven the down-cutting of the tributaries and retreat of the cliffs, simultaneously deepening and widening the canyon.
@@ -42,6 +36,10 @@ U.S. President Theodore Roosevelt visited the Grand Canyon in 1903. An avid outd
 
 The federal government administrators who manage park resources face many challenges. These include issues related to the recent reintroduction into the wild of the highly endangered California condor, air tour overflight noise levels, water rights disputes with various tribal reservations that border the park, and forest fire management. Federal officials started floods in the Grand Canyon in hopes of restoring its ecosystem in 1996, 2004 and 2008. The canyon's ecosystem was permanently changed after the construction of the Glen Canyon Dam in 1963.
 
+{{< youtube ID="ezpqDi42pRM" >}}
+
 Between 2003 and 2011, 2,215 mining claims had been requested that are adjacent to the canyon, including claims for uranium mines. Mining has been suspended since 2009, when U.S. Interior Secretary Ken Salazar withdrew 1 million acres (4,000 km2) from the permitting process, pending assessment of the environmental impact of mining. Critics of the mines are concerned that, once mined, the uranium will leach into the water of the Colorado River and contaminate the water supply for up to 18 million people.[41] Salazar's so-called "Northern Arizona Withdrawal" is a 20-year moratorium on new mines, but allows existing mines to continue. In 2012, the federal government stopped new mines in the area, which was upheld by the U.S. District Court for Arizona in 2014, but appealed by the National Mining Association, joined by the state of Arizona under Attorney General Mark Brnovich as well as Utah, Montana and Nevada. National Mining Association v. Jewell is pending before the Ninth Circuit Court of Appeals as of September 2015.
 
-{{<carousel src="Grand-Canyon-Carousel">}}
+{{< instagram ID="CKHlCKWhpkm">}}
+
+{{< carousel FolderName="Grand-Canyon-Carousel" >}}

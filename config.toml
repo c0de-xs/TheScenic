@@ -12,6 +12,7 @@ category = "categories"
 [params]
 # AMP COMPONENTS #
   ampInstagram = "true"
+  ampYouTube = "true"
   ampCarousel = "true"
   ampAccordion = "true"
   ampSocialShare = "true"

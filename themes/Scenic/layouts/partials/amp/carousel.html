@@ -1,6 +1,6 @@
 <!-- Start carousel -->
-{{ $path := print "/static/images/" (.src) }}
-{{ $url  := print "/images/" (.src) }}
+{{ $path := print "/static/images/carousels/" (.FolderName) }}
+{{ $url  := print "/images/carousels/" (.FolderName) }}
 <amp-carousel width="756" height="638" layout="responsive" type="slides" class="mb4">
 {{ range (readDir $path)  }} 
 {{ $src := print $url "/" .Name }}
@@ -8,4 +8,6 @@
   <figure class="ampstart-image-with-caption m0 relative mb4">
     <amp-img src="{{ $src }}" width="756" height="520" alt="{{ .Name }}" layout="responsive" class=""></amp-img>
   </figure>{{ end }}
+<!-- End Image -->
 </amp-carousel>
+<!-- End carousel -->
