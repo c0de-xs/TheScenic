@@ -11,7 +11,7 @@
   {{ with eq .Site.Params.ampInstagram "true" }}<script custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js" async="" ></script>{{ end }}
   {{ with eq .Site.Params.ampSocialShare "true"}}<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>{{ end }}
   {{ with eq .Site.Params.ampYouTube "true"}}<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>{{ end }}
-  {{ if eq .Site.Params.IwantGoogleFonts "true" }}<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css?family={{ with .Site.Params.NameOfGoogleFont }}{{.}}{{ end }}" rel="stylesheet">{{ end }}
+  {{ if eq .Site.Params.IwantGoogleFonts "true" }}<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css?family={{ with .Site.Params.NameOfGoogleFont | safeURL }}{{.}}{{ end }}" rel="stylesheet">{{ end }}
   <!-- END AMP Custom Components-->
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <!--Start Custom CSS-->
@@ -36,7 +36,7 @@ url("../fonts/{{ with .Site.Params.FontsWOFF }}{{ . }}{{ end }}") format("woff")
     {{ with .Site.Params.MenuFontsColorDP }}--mfc: {{.}};{{ end }}
     {{ with .Site.Params.AttentionColorDP }}--ac: {{.}};{{ end }}
     {{ end }}
-    {{ if and (eq .Site.Params.IwantGoogleFonts "true") (eq .Site.Params.IwantCustomFonts "false") }}--ff:{{ with .Site.Params.NameOfGoogleFontFamily }}{{ . }}{{ end }}, "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
+    {{ if and (eq .Site.Params.IwantGoogleFonts "true") (eq .Site.Params.IwantCustomFonts "false") }}--ff:{{ with .Site.Params.NameOfGoogleFontFamily }}{{.}}{{ end }}, "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
 {{ else if and (eq .Site.Params.IwantGoogleFonts "false") (eq .Site.Params.IwantCustomFonts "true") }}--ff: "cf", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
 {{ else }}--ff: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Noto Sans", "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
 {{ end }}

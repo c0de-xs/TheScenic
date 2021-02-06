@@ -23,7 +23,7 @@ category = "categories"
 
  ## GOOGLE FONTS ##
    IwantGoogleFonts = "true" # If you don't want change true to false inside the quotes.
-   NameOfGoogleFont = "Raleway" # Name of the Google font. For examples see the docs.
+   NameOfGoogleFont = "Raleway:wght@400;700" # Name of the Google font. For examples see the docs.
    NameOfGoogleFontFamily = "Raleway" # Name of the Google font family. For examples see the docs.
  ## END GOOGLE FONTS ##
 
@@ -175,3 +175,18 @@ category = "categories"
 
 # END MENUS #
 ### EDIT BELOW THIS POINT ONLY IF YOU KNOW WHAT ARE YOU DOING ###
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+[[related.indices]]
+    name = "tags"
+    weight = 80
+  [[related.indices]]
+    name = "date"
+    weight = 10
