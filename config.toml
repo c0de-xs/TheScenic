@@ -12,6 +12,7 @@ category = "categories"
 [params]
 # AMP COMPONENTS #
   ampInstagram = "true"
+  ampFacebook = "true"
   ampYouTube = "true"
   ampCarousel = "true"
   ampAccordion = "true"
@@ -39,7 +40,7 @@ category = "categories"
 # END FONTS #
 
 # COLORS #
- ChoosePalette = "dark" # light or dark
+ ChoosePalette = "light" # light or dark
  ## LIGHT COLOR PALETTE ##
   BrandColorLP = "#264653" # Initial Value #264653 Social Share Icons, sidebar menu, Sidebar Menu Icon, Site title
   BackgroundColorLP = "#f8f8ff" # Initial Value #f8f8ff Header Background, Main background
