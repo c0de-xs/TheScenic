@@ -70,9 +70,22 @@
   </div>
   {{ end }}
   <main id="content" role="main">
-    <article class="{{ range .Params.categories }}{{ . }}{{ end }}">
-      <h2 class="m3 center h5 italic">{{ range .Params.categories }}{{ . }}{{ end }}-{{ range .Params.tags }}{{ . }}{{ end }}</h2>
-           <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap{{ else }}no-dropcap{{ end }}">{{ .Content }}</div></article>
+    <article class="{{ range .Page.Params.categories }}{{ . }}{{ end }}">
+      {{ if or (.Page.Params.categories) (.Page.Params.tags)}}
+      
+        <ul class="m3 center h6 italic ml3"><svg class="icon icon-book"><use xlink:href="/../../images/icons/symbol-defs.svg#icon-book"></use></svg>
+        {{- range ($.GetTerms "categories") }}
+        <li class="li mb2">
+          <a class="brand" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
+        </li>
+        {{ end }}<svg class="icon icon-price-tag"><use xlink:href="/../../images/icons/symbol-defs.svg#icon-price-tag"></use></svg>
+        {{- range ($.GetTerms "tags") }}
+        <li class="b li inline pr2">
+          <a class="brand" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
+        </li>
+        {{ end }}
+      </ul>
+           <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap{{ else }}no-dropcap{{ end }}">{{ .Content }}</div></article>{{ end }}
             {{ if eq .Site.Params.IwantSocialShareIcons "true"}}
       <aside>   
       <!-- Start Socialbox -->
