@@ -33,7 +33,7 @@ The ***Ancestral Puebloans*** were a Native American culture centered on the pre
 
 Archaeologists still debate when this distinct culture emerged. The current consensus, based on terminology defined by the Pecos Classification, suggests their emergence was around 1200 BCE during the Basketmaker II Era. Beginning with the earliest explorations and excavations, researchers have believed that the Ancestral Puebloans are ancestors of the modern Pueblo peoples.
 
-{{<figure url="/images/posts/Grand-Canyon/Nankoweap.jpg"  description="Ancestral Puebloan granaries at Nankoweap Creek" caption="Ancestral Puebloan granaries at Nankoweap Creek" credit="Image from Wikipedia" creditURL="https://en.wikipedia.org/wiki/Grand_Canyon#/media/File:Nankoweap.JPG">}}
+{{<figure url="/images/posts/Grand-Canyon/Nankoweap.webp"  description="Ancestral Puebloan granaries at Nankoweap Creek" caption="Ancestral Puebloan granaries at Nankoweap Creek" credit="Image from Wikipedia" creditURL="https://en.wikipedia.org/wiki/Grand_Canyon#/media/File:Nankoweap.JPG" fallback="/images/posts/Grand-Canyon/Nankoweap.jpg">}}
 
 In addition to the Ancestral Puebloans, a number of distinct cultures have inhabited the Grand Canyon area. The Cohonina lived to the west of the Grand Canyon, between 500 and 1200 CE. The Cohonina were ancestors of the Yuman, Havasupai, and Hualapai peoples who inhabit the area today.
 

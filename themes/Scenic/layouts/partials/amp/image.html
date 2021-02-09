@@ -1,12 +1,22 @@
 <figure class="ampstart-image-with-caption m0 relative mb4">
           <amp-img
 {{ with .url }}src="{{ . }}"{{ end }}
-            width="756"
-            height="520"
+            width="16"
+            height="9"
 {{ with .description }}alt="{{ . }}" {{ end}}
             layout="responsive"
             class=""
-          ></amp-img>
+          >{{ if .fallback }}
+          <amp-img
+          {{ with .description }}alt="{{ . }}" {{ end}}
+          fallback
+          width="16"
+          height="9"
+          {{ with .fallback }}src="{{ . }}"{{ end }}
+          layout="responsive"
+        >{{ end}}
+        </amp-img></amp-img>
+
           {{ if and (.caption) (.credit) (.creditURL)}}<figcaption class="h5 mt1 px3">{{ with .caption}}{{ . }}{{end}}
             <span class="ampstart-image-credit block bold">{{with .creditURL }}<a href="{{.}}">{{end}}{{ with .credit}}{{.}}{{end}}</a>
             </span>
