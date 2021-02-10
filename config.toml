@@ -176,7 +176,7 @@ category = "categories"
 
 # END MENUS #
 ### EDIT BELOW THIS POINT ONLY IF YOU KNOW WHAT ARE YOU DOING ###
-
+newContentEditor = "code"
 enableRobotsTXT = "true"
 
 [related]
