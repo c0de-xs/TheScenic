@@ -1833,10 +1833,11 @@ template {
 p {
   margin-bottom: 1rem;
 }
-.dropcap p:first-child::first-letter {
+.dropcap p:first-child:first-letter {
         color: var(--ac);
         font-size: 3.2rem;
         font-weight: bolder;
+        
         float: left;
         overflow: hidden;
         margin: 0.85rem 0.5rem 0rem;
@@ -1878,6 +1879,16 @@ hr {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+.disclaimer {
+  background: orange;
+  border: 2px solid red;
+
+  }
+
+.disclaimer-title {
+  background: red;
+
 }
     </style>
     {{ with eq .Site.Params.ampGoogleAnalytics "true" }}

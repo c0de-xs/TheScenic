@@ -16,7 +16,7 @@ heroImageDescription: "HERO IMAGE DESCRIPTION"
 EnableDropcap: "true"
 
 ---
-Wluru, also known as Ayers Rock and officially gazetted as Uluru/Ayers Rock, is a large sandstone rock formation in the southern part of the Northern Territory in Australia. It lies 335 km (208 mi) south west of the nearest large town, Alice Springs.
+Uluru, also known as Ayers Rock and officially gazetted as Uluru/Ayers Rock, is a large sandstone rock formation in the southern part of the Northern Territory in Australia. It lies 335 km (208 mi) south west of the nearest large town, Alice Springs.
 
 Uluru is sacred to the Pitjantjatjara, the Aboriginal people of the area, known as the Aṉangu. The area around the formation is home to an abundance of springs, waterholes, rock caves and ancient paintings. Uluru is listed as a UNESCO World Heritage Site. Uluru and Kata Tjuta, also known as the Olgas, are the two major features of the Uluṟu-Kata Tjuṯa National Park.
 

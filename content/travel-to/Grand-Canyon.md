@@ -14,6 +14,9 @@ HeroImageUrl: "/images/posts/Grand-Canyon/grand-canyon.jpg"
 HeroImageDescription: "Photo of Grand Canyon by Pixabay"
 ## DROPCAP ##
 EnableDropcap: "true" #Set to false to disable dropcap
+Disclaimer: "true"
+DisclaimerTitle: "Disclaimer"
+DisclaimerContent: "This is demo content taken from the original article in Wikipedia. It is depicted hare purely for demonstrative reasons."
 Resources:
 - type: image
   url: /images/test.jpg
@@ -22,6 +25,8 @@ Resources:
   credit: From Wikipedia
   
 ---
+
+
 **The Grand Canyon** is a steep-sided canyon carved by the Colorado River in Arizona, United States. The Grand Canyon is *277 miles* (446 km) long, up to *18 miles* (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters).
 
 The canyon and adjacent rim are contained within Grand Canyon National Park, the Kaibab National Forest, Grand Canyon–Parashant National Monument, the Hualapai Indian Reservation, the Havasupai Indian Reservation and the Navajo Nation. President Theodore Roosevelt was a major proponent of preservation of the Grand Canyon area and visited it on numerous occasions to hunt and enjoy the scenery.

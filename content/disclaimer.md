@@ -1,7 +1,7 @@
 ---
 title: "Disclaimer"
 date: 2021-02-01T15:57:52+01:00
-draft: false# Set to false to publish
+draft: false # Set to false to publish
  
 description: "Disclaimer of The Hugo Scenic website" 
 summary: "Put your summary here" 

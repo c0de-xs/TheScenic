@@ -85,7 +85,10 @@
         </li>
         {{ end }}
       </ul>
-           <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap{{ else }}no-dropcap{{ end }}">{{ .Content }}</div></article>{{ end }}
+      {{if  eq .Page.Params.Disclaimer "true"}}
+      <div class="disclaimer center mb2">{{ with .Page.Params.DisclaimerTitle}}<h2 class="h5 disclaimer-title p1">{{.}}</h2>{{end}}{{ with .Page.Params.DisclaimerContent}}<p class="p1">{{.}}</p>{{ end }}</div>
+      {{ end}}
+           <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap block{{ else }}no-dropcap{{ end }}">{{ .Content }}</div></article>{{ end }}
             {{ if eq .Site.Params.IwantSocialShareIcons "true"}}
       <aside>   
       <!-- Start Socialbox -->

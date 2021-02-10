@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2021-01-30T16:26:05+01:00
-draft: true # Set to false to publish
+draft: false # Set to false to publish
  
 description: "Put your description here" 
 summary: "Put your summary here" 
