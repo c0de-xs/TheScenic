@@ -177,6 +177,8 @@ category = "categories"
 # END MENUS #
 ### EDIT BELOW THIS POINT ONLY IF YOU KNOW WHAT ARE YOU DOING ###
 
+enableRobotsTXT = "true"
+
 [related]
   includeNewer = false
   threshold = 80
