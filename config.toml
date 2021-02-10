@@ -178,6 +178,8 @@ category = "categories"
 ### EDIT BELOW THIS POINT ONLY IF YOU KNOW WHAT ARE YOU DOING ###
 newContentEditor = "code"
 enableRobotsTXT = "true"
+relativeURLs = "true"
+canonifyURLs = "true"
 
 [related]
   includeNewer = false
