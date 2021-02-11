@@ -1,0 +1,56 @@
+<div class="m3">
+    <!--Attribuition-->
+{{ if eq .type "Attribution"}}<span class="h4">License:</span>
+    <ul class="ul">
+        <a  class="brand" rel="license" target="_blank" href="https://creativecommons.org/licenses/by/4.0/" title="This work is licensed under a Creative Commons Attribution 4.0 International License">
+        <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons"></use></svg></li>
+        <li class="inline"> <svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-attribution"></use></svg></li></a>
+    </ul>{{ end }}
+    <!--Attribuition No Derivatives-->
+{{ if eq .type "Attribution-NoDerivatives"}}<span class="h4">License:</span>
+    <ul class="ul">
+        <a  class="brand" rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nd/4.0/" title="This work is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License">
+        <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons"></use></svg></li>
+        <li class="inline"> <svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-attribution"></use></svg></li>
+        <li class="inline"> <svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-noderivs"></use></svg></li>
+        </a>
+    </ul>{{ end }}
+    <!--Attribution Share Alike-->
+{{ if eq .type "Attribution-ShareAlike"}}<span class="h4">License:</span>
+<ul class="ul">
+    <a  class="brand" rel="license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/" title="TThis work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License">
+    <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons"></use></svg></li>
+    <li class="inline"> <svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-attribution"></use></svg></li>
+    <li class="inline"> <svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-sharealike"></use></svg></li>
+    </a>
+</ul>{{ end }}
+<!--Attribution NonCommercial -->
+{{ if eq .type "Attribution-NonCommercial"}}<span class="h4">License:</span>
+    <ul class="ul">
+        <a  class="brand" rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/" title="This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License">
+        <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons"></use></svg></li>
+        <li class="inline"> <svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-attribution"></use></svg></li>
+        <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-noncommercial-us"></use></svg></li>
+        </a>
+    </ul>{{ end }}
+    <!--Attribution NonCommercial NoDerivatives -->
+{{ if eq .type "Attribution-NonCommercial-NoDerivatives"}}<span class="h4">License:</span>
+<ul class="ul">
+    <a  class="brand" rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License">
+    <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons"></use></svg></li>
+    <li class="inline"> <svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-attribution"></use></svg></li>
+    <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-noncommercial-us"></use></svg></li>
+    <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-noderivs"></use></svg></li>
+    </a>
+</ul>{{ end }}
+<!--Attribution NonCommercial ShareAlike-->
+{{ if eq .type "Attribution-NonCommercial-ShareAlike"}}<span class="h4">License:</span>
+<ul class="ul">
+    <a  class="brand" rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License">
+    <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons"></use></svg></li>
+    <li class="inline"> <svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-attribution"></use></svg></li>
+    <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-noncommercial-us"></use></svg></li>
+    <li class="inline"><svg class="lic"><use xlink:href="/images/icons/symbol-defs-license.svg#icon-creative-commons-sharealike"></use></svg></li>
+    </a>
+</ul>{{ end }}
+</div>

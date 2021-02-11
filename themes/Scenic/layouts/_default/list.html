@@ -14,9 +14,9 @@
   <article class="list">
     <h2 class="m3 center h4 italic">Category</h2>
       {{ .Content }}
-      <ul>
+      <ul class="ul">
       {{ range .Pages }}
-        <li class="mb3 li">
+        <li class="mb3">
           {{ if eq .Page.Params.HeroImage "true"}}
           <figure class="ampstart-image-fullpage-hero m0 relative mb4 b">
             <amp-img width="200" height="200" {{ with .Page.Params.HeroImageDescription }} alt="{{ . }}"{{ end }} layout="responsive" {{ with .Page.Params.HeroImageUrl }} src="{{ . }}"{{ end }} media="(max-width: 415px)"></amp-img>
