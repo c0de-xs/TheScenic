@@ -71,24 +71,24 @@
   {{ end }}
   <main id="content" role="main">
     <article class="{{ range .Page.Params.categories }}{{ . }}{{ end }}">
-      {{ if or (.Page.Params.categories) (.Page.Params.tags)}}
       
-        <ul class="m3 center h6 italic ml3"><svg class="icon icon-book"><use xlink:href="/../../images/icons/symbol-defs.svg#icon-book"></use></svg>
-        {{- range ($.GetTerms "categories") }}
-        <li class="li mb2">
-          <a class="brand" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
-        </li>
-        {{ end }}<svg class="icon icon-price-tag"><use xlink:href="/../../images/icons/symbol-defs.svg#icon-price-tag"></use></svg>
-        {{- range ($.GetTerms "tags") }}
-        <li class="b li inline pr2">
-          <a class="brand" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
-        </li>
-        {{ end }}
-      </ul>
       {{if  eq .Page.Params.Disclaimer "true"}}
       <div class="disclaimer center mb2">{{ with .Page.Params.DisclaimerTitle}}<h2 class="h5 disclaimer-title p1">{{.}}</h2>{{end}}{{ with .Page.Params.DisclaimerContent}}<p class="p1">{{.}}</p>{{ end }}</div>
-      {{ end}}
-           <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap block{{ else }}no-dropcap{{ end }}">{{ .Content }}</div></article>{{ end }}
+      {{ end }}
+           <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap block {{ end }} mt4">{{ .Content }}</div></article>
+           {{ if or (.Page.Params.categories) (.Page.Params.tags)}}
+      <div class="h5 m3">
+        <span class="">Category:</span>
+        {{- range ($.GetTerms "categories") }}
+        <span class=" button">
+          <a class="brand" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a></span>
+        {{ end }}<br>
+        <span class="">Tags:</span>
+        {{- range ($.GetTerms "tags") }}
+          <a class="brand pr1" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
+        {{ end }}
+      </ul></div>{{ end }}
+      <hr>
             {{ if eq .Site.Params.IwantSocialShareIcons "true"}}
       <aside>   
       <!-- Start Socialbox -->
@@ -215,5 +215,4 @@
 						{{end}}
                     </article>{{end}}{{end}}
                   </aside>
-                </main>
-                {{ end }}
+                </main>{{ end }}

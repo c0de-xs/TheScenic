@@ -5,7 +5,7 @@ draft: false # Set to false to publish
 Author: "John Smith"
 description: "Dummy demonstrative content" 
 summary: "This is a demo article to demonstrate the possibilities of The Hugo Scenic theme for Hugo " 
-tags: [USA] 
+tags: [USA , City, Test] 
 categories: [Travel] 
 ## HERO IMAGE ##
 # You have to fill the heroImageUrl and the heroImageDescription.
