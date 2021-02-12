@@ -120,7 +120,14 @@ category = "categories"
     title = "About"
     name = "About"
     url = "/about/"
-    weight = -100
+    weight = -120
+
+  [[menu.sidebar]]
+    identifier = "policy"
+    title = "Policy"
+    name = "Policy"
+    url = "/policy/"
+    weight = -110
   
   [[menu.sidebar]]
     identifier = "contact"
@@ -129,19 +136,6 @@ category = "categories"
     url = "/contact/"
     weight = -100
   
-  [[menu.sidebar]]
-    identifier = "disclaimer"
-    title = "Disclaimer"
-    name = "Disclaimer"
-    url = "/disclaimer/"
-    weight = -100
-  
-  [[menu.sidebar]]
-    identifier = "policy"
-    title = "Policy"
-    name = "Policy"
-    url = "/policy/"
-    weight = -100
  ## END SIDEBAR MENU ##
 
  ## FOOTER MENU ## 
@@ -150,7 +144,14 @@ category = "categories"
     title = "About"
     name = "About"
     url = "/about/"
-    weight = -100
+    weight = -120
+
+  [[menu.footer]]
+    identifier = "policy"
+    title = "Policy"
+    name = "Policy"
+    url = "/policy/"
+    weight = -110
   
   [[menu.footer]]
     identifier = "contact"
@@ -159,19 +160,7 @@ category = "categories"
     url = "/contact/"
     weight = -100
   
-  [[menu.footer]]
-    identifier = "disclaimer"
-    title = "Disclaimer"
-    name = "Disclaimer"
-    url = "/disclaimer/"
-    weight = -100
   
-  [[menu.footer]]
-    identifier = "policy"
-    title = "Policy"
-    name = "Policy"
-    url = "/policy/"
-    weight = -100
  ## END FOOTER MENU ##
 
 # END MENUS #

@@ -40,3 +40,9 @@ I must be cruel only to be kind.  He lets me feed with his hinds, bars me the pl
 The game is up.  That's meat and drink to me, now.  I will wear my heart upon my sleeve  But for this lord Who hath abus'd me as he knows himself, Though yet he never harm'd me, here I quit him. It is my only suit, Provided that you weed your better judgments Of all opinion that grows rank in them That I am wise.  As it is a spare life, look you, it fits my humour well; but as there is no more plenty in it, it goes much against my stomach. 
 
 That's meat and drink to me, now.  Let Rome in Tiber melt, and the wide arch Of the rang'd empire fall! Here is my space.  Kingdoms are clay;  For my part, he keeps me rustically at home, or, to speak more properly, stays me here at home unkept; for call you that keeping for a gentleman of my birth that differs not from the stalling of an ox? His horses are bred better; for, besides that they are fair with their feeding, they are taught their manage, and to that end riders dearly hir'd; but I, his brother, gain nothing under him but growth; for the which his animals on his dunghills are as much bound to him as I.  Your brother- no, no brother; yet the son- Yet not the son; I will not call him son Of him I was about to call his father- Hath heard your praises; and this night he means To burn the lodging where you use to lie, And you within it.  But if thy love were ever like to mine, As sure I think did never man love so, How many actions most ridiculous Hast thou been drawn to by thy fantasy? I think he be transform'd into a beast; For I can nowhere find him like a man.
+
+---
+
+{{< license type="Attribution">}}
+
+---
