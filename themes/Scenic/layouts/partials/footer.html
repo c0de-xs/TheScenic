@@ -237,7 +237,7 @@
         {{ $currentPage := . }}
       {{ range .Site.Menus.footer }}
         <li class="px1">
-          <a class="text-decoration-none ampstart-label"{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}} href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+          <a class="brand ampstart-label"{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}} href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
         </li>{{ end }}
       </ul>
     </nav>

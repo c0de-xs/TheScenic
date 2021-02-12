@@ -2,7 +2,7 @@
 <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
   <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0"class="ampstart-navbar-trigger pr2">☰</div>
   <div class="ampstart-headerbar-title mx-auto h3">
-    <a href="{{ "/" | absURL }}" class="text-decoration-none brand">{{ .Site.Title }}</a>
+    <a href="{{ "/" | absURL }}" class="title">{{ .Site.Title }}</a>
   </div>
 </header>
 
@@ -20,7 +20,7 @@
           <header>Articles</header>
           <ul class="ampstart-dropdown-items list-reset m0 p0">
             {{ range .Site.Taxonomies.categories }}
-            <li class="ampstart-dropdown-item"><a class="text-decoration-none" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+            <li class="ampstart-dropdown-item"><a class="menu text-decoration-none" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
             {{ end }} 
         </ul>
         </section>
@@ -38,9 +38,10 @@
           <header>Tags</header>
           <ul class="ampstart-dropdown-items list-reset m0 p0">
             {{ range .Site.Taxonomies.tags }}
-            <li class="ampstart-dropdown-item"><a class="text-decoration-none" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+            <li class="ampstart-dropdown-item"><a class="menu" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
             {{ end }}
           </ul>
+          
         </section>
       </amp-accordion>
       <!-- End Dropdown-inline -->
@@ -50,7 +51,7 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.sidebar }}
     <li class="ampstart-faq-item">
-      <a class="mfc"{{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }} active{{end}} href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+      <a class="menu"{{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }} active{{end}} href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
     </li>{{ end }}
   </ul>
 </nav>

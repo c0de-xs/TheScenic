@@ -78,14 +78,14 @@
            <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap block {{ end }} mt4">{{ .Content }}</div></article>
            {{ if or (.Page.Params.categories) (.Page.Params.tags)}}
       <div class="h5 m3">
-        <span class="">Category:</span>
+        <span>Category:</span>
         {{- range ($.GetTerms "categories") }}
-        <span class=" button">
-          <a class="brand" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a></span>
+        <span>
+          <a  class="pr1" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a></span>
         {{ end }}<br>
         <span class="">Tags:</span>
         {{- range ($.GetTerms "tags") }}
-          <a class="brand pr1" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
+          <a class="pr1" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
         {{ end }}
       </ul></div>{{ end }}
       <hr>

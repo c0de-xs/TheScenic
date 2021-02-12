@@ -17,7 +17,7 @@ EnableDropcap: "true" #Set to false to disable dropcap
 
 The better part of valour is discretion. Harp not on that.  The course of true love never did run smooth.  Hisperia, the Princess' gentlewoman, Confesses that she secretly o'erheard Your daughter and her cousin much commend The parts and graces of the wrestler That did but lately foil the sinewy Charles; And she believes, wherever they are gone, That youth is surely in their company. Come, sing; and you that will not, hold your tongues.  A fool, a fool! I met a fool i' th' forest, A motley fool.  Here comes my sister, reading; stand aside.
 
-It was Greek to me.  No, Corin, being old, thou canst not guess, Though in thy youth thou wast as true a lover As ever sigh'd upon a midnight pillow.   But doth he know that I am in this forest, and in man's apparel? Looks he as freshly as he did the day he wrestled?
+It was Greek to me.  No, [Corin](https://www.google.com), being old, thou canst not guess, Though in thy youth thou wast as true a lover As ever sigh'd upon a midnight pillow.   But doth he know that I am in this forest, and in man's apparel? Looks he as freshly as he did the day he wrestled?
 
 > My Dad says that being a *Londoner* has nothing to do with where you’re born.  
 > He says that there are people who get off a jumbo jet at *Heathrow*, go through immigration waving any kind of passport, hop on the tube and by the time the train’s pulled into *Piccadilly Circus*, they’ve become a Londoner.

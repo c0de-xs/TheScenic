@@ -1175,10 +1175,27 @@ template {
         font-weight: bold;;
         letter-spacing: 0.06rem;
       }
-      a,
-      a:active,
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--ac);
+      }
+      a:link {
+        text-decoration: underline;
+      }
       a:visited {
         color: var(--ac);
+        text-decoration: none;
+        font-weight: normal;
+      }
+      a:focus {
+        color: var(--ac);
+        text-decoration: underline overline;
+      }
+      a:hover, a:active{
+        text-decoration: underline;
+        font-weight: bold;
+        text-decoration-style: wavy;
       }
       .ampstart-btn {
         font-family: inherit;
@@ -1743,7 +1760,7 @@ template {
       .ampstart-nav-dropdown .ampstart-dropdown-item,
       .ampstart-nav-dropdown .ampstart-dropdown > section > header,
       .ampstart-sidebar-faq {
-        font-family: Work Sans, arial, sans-serif;
+        font-family: var(--ff);
       }
       .ampstart-nav-dropdown .ampstart-dropdown {
         letter-spacing: 0;
@@ -1830,6 +1847,7 @@ template {
         border: 3px double var(--ac);
         {{ end }}
 }
+
 p {
   
   margin:1.5rem;
@@ -1844,15 +1862,38 @@ p {
         margin: 0.4rem 0.5rem 0rem;
 }
 
-
-.brand, .brand:active, .brand:visited  {
+.brand:link {
         text-decoration: none;
         color: var(--bc);
       }
-.mfc, .mfc:active, .mfc:visited  {
+.brand:visited {
+  color: var(--bc);
+}
+.brand:hover, .brand:active {
+  text-decoration: underline;
+  text-decoration-style:wavy;
+  color: var(--ac);
+}
+.menu:link {
         text-decoration: none;
         color: var(--mfc);
+        font-weight:normal;
       }
+.menu:visited {
+  color: var(--mfc);
+}
+.menu:focus, .menu:hover, .menu:active {
+  text-decoration: underline;
+  text-decoration-style:wavy;
+  color: var(--mfc);
+}
+.title:link, .title:visited, .title:hover, .title:active  {
+        text-decoration: none;
+        color: var(--bc);
+      }
+.title:focus {
+  color: var(--ac);
+}
 .ul { 
   list-style-type: none;
   margin:0;
