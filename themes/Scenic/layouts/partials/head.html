@@ -1831,31 +1831,25 @@ template {
         {{ end }}
 }
 p {
-  margin-bottom: 1.5rem;
-  margin-left:1.5rem;
+  
+  margin:1.5rem;
 }
+
 .dropcap p:first-child:first-letter {
         color: var(--ac);
         font-size: 3.2rem;
         font-weight: bolder;
-        
         float: left;
         overflow: hidden;
-        margin: 0.85rem 0.5rem 0rem;
+        margin: 0.4rem 0.5rem 0rem;
 }
-blockquote {
-  padding-left: 1rem;
-  padding-top:1rem;
-  font-size: 1.5rem;
-  color:var(--bc);
-  border-top: 4px double var(--ac);
-  border-bottom: 4px double var(--ac);
-}
+
+
 .brand, .brand:active, .brand:visited  {
         text-decoration: none;
         color: var(--bc);
       }
-      .mfc, .mfc:active, .mfc:visited  {
+.mfc, .mfc:active, .mfc:visited  {
         text-decoration: none;
         color: var(--mfc);
       }
@@ -1901,6 +1895,32 @@ hr {
   stroke: var(--bc);
   fill: var(--bc);
 }
+blockquote {
+  font-size: 1.3rem;
+  color:var(--bc);
+  border-left: 10px solid var(--bc);
+}
+.quote {
+  padding:30px 5px 30px 30px;
+  -moz-box-shadow: 2px 2px 15px #000;
+  -webkit-box-shadow: 2px 2px 15px #000;
+  box-shadow: 2px 2px 15px #000;
+}
+.quote::before{
+  content: "\2036";
+  font-weight:bold;
+  color:var(--ac);
+  font-size:4rem;
+  position: absolute;
+  left: 10px;
+  top:35px;
+}
+.quote::after{
+  content: '';
+}
+.cite {
+  font-size:1.1rem;
+    }
     </style>
     {{ with eq .Site.Params.ampGoogleAnalytics "true" }}
     <meta name="amp-google-client-id-api" content="googleanalytics" />
