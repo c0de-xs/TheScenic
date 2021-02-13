@@ -1895,11 +1895,23 @@ p {
 .title:focus {
   color: var(--ac);
 }
-.ul { 
-  list-style-type: none;
-  margin:0;
-  padding:0;
+/* brand color*/
+.brc {color:var(--bc);}
+
+.wac {
+  background-color: var(--ac);
+  color: white;
   }
+  .watc {
+  background-color: white;
+  color:var(--fc);
+  }
+  .wafc {
+  background-color: var(--ac);
+  color:white;
+  }
+.wab { border: 5px solid var(--ac); }
+
 .b { border:1px solid var(--bc);}
 .h {height: 200px;}
 .error { 
@@ -1963,6 +1975,7 @@ blockquote {
 .cite {
   font-size:1.1rem;
     }
+
     </style>
     {{ with eq .Site.Params.ampGoogleAnalytics "true" }}
     <meta name="amp-google-client-id-api" content="googleanalytics" />
