@@ -54,38 +54,26 @@
       <div class="disclaimer center mb2">{{ with .Page.Params.DisclaimerTitle}}<h2 class="h5 disclaimer-title p1">{{.}}</h2>{{end}}{{ with .Page.Params.DisclaimerContent}}<p class="p1">{{.}}</p>{{ end }}</div>
       {{ end }}
            <div class="{{ with eq .Page.Params.EnableDropcap "true" }}dropcap block {{ end }} mt4">{{ .Content }}</div></article>
-           <div class="categories">
-            <h2 class="center mb3 brc">Categories</h2>
-            {{- if isset .Site.Taxonomies "categories" }}
-{{- if not (eq (len .Site.Taxonomies.categories) 0) }}
 
-<ul class="list-reset center">
-  {{- range $name, $items := .Site.Taxonomies.categories }}
-  <li class="inline-block mr1"><div class=""><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}"><figure class="">
-    <a class="brand" href=""><amp-img width="200" height="200"  alt=""  src="/images/posts/Homepage/notepad-1130743_640.jpg"class=""></amp-img>
-      <figcaption class="">
-        <header class="p0 center">
-          <h2 class="">{{ $name | title | humanize }}</h2>
-        </header>
-      </figcaption></a></div></li>
-    </figure>
-  {{- end }}
-</ul>
-{{- end }}
-{{- end }}
-           </div><hr>
-   <div class="clearfix">
-          <amp-img
-            src="img/building_square.jpg"
-            width="100"
-            height="100"
-            class="left mr3"
-          ></amp-img>
-          <p class="mx3 my1 caps h3 bold">Section title</p>
-          <h2 class="mx3 my1 h2 line-height-2">
-            Article title goes in this space right here
-          </h2>
-        </div><hr>
+        <div class="categories">
+          <h2 class="center mb3 brc">Categories</h2>
+        {{- if isset .Site.Taxonomies "categories" }}
+           {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+        <ul class="clearfix center">
+          {{ range first 5 .Site.Taxonomies.categories.ByCount }}
+            <li class="inline-block mr1"><a href="/tags/{{ .Name | urlize }}">{{ .Name }}</a> ({{ .Count }})</li>
+          {{ end }}
+        </ul>{{ end }}{{ end }}</div><hr>
+        <div class="tags">
+          <h2 class="center mb3 brc">Tags</h2>
+        {{- if isset .Site.Taxonomies "tags" }}
+           {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
+        <ul class="clearfix center">
+          {{ range first 5 .Site.Taxonomies.tags.ByCount }}
+            <li class="inline-block mr1"><a href="/tags/{{ .Name | urlize }}">{{ .Name }}</a> ({{ .Count }})</li>
+          {{ end }}
+        </ul>{{ end }}{{ end }}</div><hr>
+        
 <div class="recent-posts">
     <h2 class="center mb3 brc">Most Recent Posts</h2>
     <ul class="list-reset">
