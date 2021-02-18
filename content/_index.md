@@ -6,7 +6,7 @@ Author: "Code-XS"
 description: "Put your description here" 
 summary: "Put your summary here" 
 tags: [] 
-categories: [test2] 
+categories: [] 
 ## HERO IMAGE ##
 # You have to fill the heroImageUrl and the heroImageDescription.
 HeroImage: "true" # Change to true if you want to enable hero images

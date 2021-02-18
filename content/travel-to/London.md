@@ -2,6 +2,7 @@
 title: "Secrets of London"
 date: 2021-02-03T16:45:43+01:00
 draft: false # Set to false to publish
+author: "John Smith"
 description: "Dummy demonstrative content" 
 summary: "This is a demo article to demonstrate the possibilities of The Hugo Scenic theme for Hugo " 
 tags: [Europe, Quotes, Instagram] 
@@ -9,10 +10,14 @@ categories: [Travel]
 ## HERO IMAGE ##
 # You have to fill the heroImageUrl and the heroImageDescription.
 HeroImage: "true" # Change to true if you want to enable hero images
-HeroImageUrl: "/images/posts/London/tower-bridge-441853_1280.jpg"
+HeroImageUrl: "/images/posts/London/towerbridge4418531280.jpg"
 HeroImageDescription: "London"
+HeroImageWidth: "1280"
+HeroImageHeight: "849"
 ## DROPCAP ##
 EnableDropcap: "true" #Set to false to disable dropcap
+## STRUCTURED DATA ##
+StructuredDataType: "Article"
 ---
 
 The better part of valour is discretion. Harp not on that.  The course of true love never did run smooth.  Hisperia, the Princess' gentlewoman, Confesses that she secretly o'erheard Your daughter and her cousin much commend The parts and graces of the wrestler That did but lately foil the sinewy Charles; And she believes, wherever they are gone, That youth is surely in their company. Come, sing; and you that will not, hold your tongues.  A fool, a fool! I met a fool i' th' forest, A motley fool.  Here comes my sister, reading; stand aside.

@@ -57,7 +57,8 @@ category = "categories"
   AttentionColorDP = "#ff6700" # 
  ## END DARK COLOR PALETTE ##
 # END COLORS #
-
+# STRUCTURED DATA #
+IwantStructuredData = "true"
 # SOCIAL ICONS #
 
  ## SOCIAL SHARE #
@@ -184,3 +185,5 @@ canonifyURLs = "true"
   [[related.indices]]
     name = "date"
     weight = 10
+
+
