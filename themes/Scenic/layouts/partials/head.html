@@ -14,47 +14,7 @@
   {{ with eq .Site.Params.ampFacebook "true"}}<script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>{{ end }}
   {{ if eq .Site.Params.IwantGoogleFonts "true" }}<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css?family={{ with .Site.Params.NameOfGoogleFont | safeURL }}{{.}}{{ end }}" rel="stylesheet">{{ end }}
   <!-- END AMP Custom Components-->
-  <!-- START STRUCTURED DATA-->
-  {{- if eq .Site.Params.IwantStructuredData "true" }}
-  <script type="application/ld+json">
-    {
-     "@context": "http://schema.org",
-     "@type": "{{- if .IsPage }}{{- with .Page.Params.StructuredDataType }}{{ . }}{{- end }}{{ else }}WebSite{{ end }}",
-     "mainEntityOfPage":{
-       "@type":"WebPage",
-       "@id":"{{ .Permalink }}"
-     },
-     "headline": "{{- .Page.Params.Title }}",
-     {{ if eq .Page.Params.HeroImage "true" }}
-     "image": {
-       "@type": "ImageObject",
-       "url": "{{ .Page.Params.HeroImageURL | absURL }}",
-       {{ if and (.Page.Params.HeroImageHeight) (.Page.Params.HeroImageWidth) }}
-       "height": {{.Page.Params.HeroImageHeight}},
-       "width": {{- .Page.Params.HeroImageWidth}}{{ else }}
-       "height": 720,
-       "width": 404 {{ end }}
-     }{{ end }},
-     "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
-     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
-     {{- with .Page.Params.Author }}
-     "author": {
-       "@type": "Person",
-       "name": "{{.}}"
-     },{{- end}}
-     "publisher": {
-       "@type": "Organization",
-       "name": "⚡ AMP Times",
-       "logo": {
-         "@type": "ImageObject",
-         "url": "https://example.com/amptimes_logo.jpg",
-         "width": 600,
-         "height": 60
-       }
-     },
-     "description": "My first experience in an AMPlified world"
-    }
-    </script>{{- end }}
+  {{- partial "SEO/schema.html" . -}}
   <!--END STRUCTURED DATA-->
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <!--Start Custom CSS-->

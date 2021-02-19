@@ -59,6 +59,11 @@ category = "categories"
 # END COLORS #
 # STRUCTURED DATA #
 IwantStructuredData = "true"
+  SchemaPublisher = "Organization" # Organization or Person
+  Logo = "true"
+  LogoURL = "www.test.com/logo.jpg"
+  LogoWidth = "100"
+  LogoHeight = "100"
 # SOCIAL ICONS #
 
  ## SOCIAL SHARE #
