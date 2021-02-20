@@ -57,13 +57,20 @@ category = "categories"
   AttentionColorDP = "#ff6700" # 
  ## END DARK COLOR PALETTE ##
 # END COLORS #
+
 # STRUCTURED DATA #
 IwantStructuredData = "true"
   SchemaPublisher = "Organization" # Organization or Person
-  Logo = "true"
-  LogoURL = "www.test.com/logo.jpg"
-  LogoWidth = "100"
-  LogoHeight = "100"
+  OrganizationName = " "
+  PersonName = "Webmaster"
+  ## AVATAR SETTINGS ##
+  IhaveAnAvatar = "true"
+  AvatarURL = "https://www.example.com/logo.jpg"
+  AvatarWidth = "200"
+  AvatarHeight = "200"
+
+# END STRUCTURED DATA
+
 # SOCIAL ICONS #
 
  ## SOCIAL SHARE #

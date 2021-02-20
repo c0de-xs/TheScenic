@@ -1,13 +1,15 @@
   <!-- START STRUCTURED DATA-->
   {{- if eq .Site.Params.IwantStructuredData "true" }}
+  {{ $Name := .Site.Params.PersonName }}
   <script type="application/ld+json">
     {
      "@context": "http://schema.org",
      "@type": "{{- if .IsPage }}{{- with .Page.Params.StructuredDataType }}{{ . }}{{- end }}{{ else }}WebSite{{ end }}",
      "mainEntityOfPage":{
        "@type":"WebPage",
-       "@id":"{{ .Permalink }}"
-     },
+       "@id":"{{ .Site.BaseURL }} {{ .Site.LanguageCode }} {{ .Page.Params.description }}"
+     }
+         },
      "headline": "{{- .Page.Params.Title }}",
      {{ if eq .Page.Params.HeroImage "true" }}
      "image": {
@@ -41,3 +43,4 @@
      "description": "{{.}}"
     }{{- end }}
     </script>{{- end }}
+
