@@ -5,7 +5,7 @@ languageCode = "en" # Your site's main language
 defaultContentLanguage = "en"
 title = "The Hugo Scenic" # Your site's title
 newContentEditor = "code"
-defaultContentLanguageInSubdir = "true"
+defaultContentLanguageInSubdir = "false"
 [taxonomies] 
 tag = "tags" 
 category = "categories" 
@@ -204,9 +204,12 @@ canonifyURLs = "true"
 [languages]
   [languages.el]
     title = "The Hugo Scenic"
-    weight = 2
+    weight = "3"
     contentDir = "content/el"
     languageName = "Ελ."
+      [languages.el.Taxonomies]
+        category = "κατηγορίες"
+        tag = "Tags"
   [languages.it]
     title = "The Hugo Scenic"
     weight = "2"

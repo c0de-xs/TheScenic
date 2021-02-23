@@ -6,7 +6,7 @@ author: "John Smith"
 description: "Dummy demonstrative content" 
 summary: "This is a demo article to demonstrate the possibilities of The Hugo Scenic theme for Hugo " 
 tags: [Europe, Quotes, Instagram] 
-categories: [Travel] 
+κατηγορίες: [Ταξίδια] 
 ## HERO IMAGE ##
 # You have to fill the heroImageUrl and the heroImageDescription.
 HeroImage: "true" # Change to true if you want to enable hero images
