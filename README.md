@@ -8,7 +8,7 @@ A port of the [The Scenic](https://amp.dev/documentation/templates/scenic/?forma
 ![Maintenance](https://img.shields.io/maintenance/yes/2021?color=green)
 ---
 ### Current Version:
-**v.1.0.0-a.5**
+**v.1.0.0-α.9**
 ---
 
 
