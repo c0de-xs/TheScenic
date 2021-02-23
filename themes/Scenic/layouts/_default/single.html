@@ -32,10 +32,12 @@
           </h1>
 
           <span class="ampstart-image-credit h4">
-           {{ with .Page.Params.Author }} By
+           {{ with .Page.Params.Author }} {{ i18n "By" . }}
            
-            {{ . }},<br>{{ end }} on
-            {{ .Date.Format "Jan 2, 2006" }}
+            {{ . }},{{ end }} on
+            {{ .Date.Format "Jan 2, 2006" }}<br><hr> {{ i18n "wordCount" . }}
+            {{ i18n "readingTime" .ReadingTime }} 
+            
           </span>
         </header>
         <footer class="absolute left-0 right-0 bottom-0">

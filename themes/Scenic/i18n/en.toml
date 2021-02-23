@@ -1,0 +1,9 @@
+[By]
+other = "από"
+
+[readingTime]
+one = "και χρειάζεται περίπου ένα λεπτό"
+other = "και χρειάζεται περίπου {{.Count}} λεπτά"
+
+[wordCount]
+other = "Το άρθρο έχει {{ .WordCount }} λέξεις."

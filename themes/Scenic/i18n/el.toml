@@ -1,0 +1,6 @@
+[readingTime]
+one = "Ένα λεπτό"
+other = "{{.Count}} λεπτά"
+
+[wordCount]
+other = "Το άρθρο έχει {{ .WordCount }} λέξεις."

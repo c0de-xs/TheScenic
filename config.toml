@@ -1,9 +1,11 @@
 theme = "Scenic"
 # Edit the following values between the quotation marks ("")
 baseURL = "" # Your site url
-languageCode = "en_US" # Your site's main language
+languageCode = "en" # Your site's main language
+defaultContentLanguage = "en"
 title = "The Hugo Scenic" # Your site's title
 newContentEditor = "code"
+defaultContentLanguageInSubdir = "true"
 [taxonomies] 
 tag = "tags" 
 category = "categories" 
@@ -197,5 +199,22 @@ canonifyURLs = "true"
   [[related.indices]]
     name = "date"
     weight = 10
+
+
+[languages]
+  [languages.el]
+    title = "The Hugo Scenic"
+    weight = 2
+    contentDir = "content/el"
+    languageName = "Ελ."
+  [languages.it]
+    title = "The Hugo Scenic"
+    weight = "2"
+    contentDir = "content/it"
+    languageName = "It."
+  [languages.en]
+    title = "The Hugo Scenic"
+    weight = 1
+    languageName = "En."
 
 

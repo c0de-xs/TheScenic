@@ -11,11 +11,16 @@
   <div class="flex justify-start items-center ampstart-sidebar-header">
   <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
   </div>
+  
     <nav class="ampstart-sidebar-nav ampstart-nav">
+      <header>Language</header>
+  <ul class="list-reset m0 p0 ampstart-label">
+    {{ range $.Site.Home.AllTranslations }}
+    <li class="inline p1"><a class="menu text-decoration-none " href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>{{ end }}</ul>
       <ul class="list-reset m0 p0 ampstart-label">
         <li class="ampstart-nav-item ampstart-nav-dropdown relative">
       <!-- Start Dropdown-inline -->
-        <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+        <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown mt2">
         <section>
           <header>Articles</header>
           <ul class="ampstart-dropdown-items list-reset m0 p0">
