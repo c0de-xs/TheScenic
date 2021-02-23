@@ -26,8 +26,8 @@ category = "categories"
 
  ## GOOGLE FONTS ##
    IwantGoogleFonts = "true" # If you don't want change true to false inside the quotes.
-   NameOfGoogleFont = "Raleway:wght@400;700" # Name of the Google font. For examples see the docs.
-   NameOfGoogleFontFamily = "Raleway" # Name of the Google font family. For examples see the docs.
+   NameOfGoogleFont = "M+PLUS+Rounded+1c:wght@400;700" # Name of the Google font. For examples see the docs.
+   NameOfGoogleFontFamily = "M PLUS Rounded 1c" # Name of the Google font family. For examples see the docs.
  ## END GOOGLE FONTS ##
 
  ## CUSTOM FONTS ##
