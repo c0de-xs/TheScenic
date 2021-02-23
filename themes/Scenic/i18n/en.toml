@@ -1,9 +1,7 @@
 [By]
-other = "από"
-
-[readingTime]
-one = "και χρειάζεται περίπου ένα λεπτό"
-other = "και χρειάζεται περίπου {{.Count}} λεπτά"
-
+other = "By"
 [wordCount]
-other = "Το άρθρο έχει {{ .WordCount }} λέξεις."
+other = "This article have {{ .WordCount }} words."
+[readingTime]
+one = "One minute to read"
+other = "{{.Count}} minutes to read"
