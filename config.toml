@@ -9,8 +9,7 @@ defaultContentLanguageInSubdir = "false"
 [taxonomies] 
 tag = "tags" 
 category = "categories" 
-#TAXONOMY_NAME_SINGLE = "PLURAL" 
-# Add your own taxonomies 
+#TAXONOMY_NAME_SINGLE = "PLURAL"
 [params]
 # AMP COMPONENTS #
   ampInstagram = "true"
