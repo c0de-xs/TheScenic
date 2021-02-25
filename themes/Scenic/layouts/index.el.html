@@ -4,35 +4,16 @@
 <div class="center">
 <!-- Start Fullpage Hero -->
   <figure class="ampstart-image-fullpage-hero m0 relative mb4">
-    <amp-img
-      width="404"
-      height="720"
-      {{ with .Page.Params.HeroImageDescription }}
-      alt="{{ . }}"{{ end }}
-      layout="responsive"
-      {{ with .Page.Params.HeroImageUrl }}
-      src="{{ . }}"{{ end }}
-      media="(max-width: 415px)"
-      ></amp-img>
-      <amp-img
-        height="720"
-        {{ with .Page.Params.HeroImageDescription }}
-        alt="{{ . }}"{{ end }}
-        layout="fixed-height"
-        {{ with .Page.Params.HeroImageUrl }}
-        src="{{ . }}"{{ end }}
-        media="(min-width: 416px)"
-      ></amp-img>
+    <amp-img width="404" height="720" {{ with .Page.Params.HeroImageDescription }}alt="{{ . }}"{{ end }} layout="responsive" {{ with .Page.Params.HeroImageUrl }}
+      src="{{ . }}"{{ end }} media="(max-width: 415px)"></amp-img>
+    <amp-img height="720" {{ with .Page.Params.HeroImageDescription }} alt="{{ . }}"{{ end }} layout="fixed-height" {{ with .Page.Params.HeroImageUrl }} src="{{ . }}"{{ end }} media="(min-width: 416px)"></amp-img>
       <div class="absolute top-0 right-0 bottom-0 left-0">
         <footer class="absolute left-0 right-0 bottom-0">
-          <a
-            class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5"
-            href="#content"
-            ></a>
+          <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#content"></a>
         </footer>
-    </div>
-    </figure>
-    <!-- End Fullpage Hero --> 
+      </div>
+  </figure>
+ <div></div>   <!-- End Fullpage Hero --> 
   </div> {{ end }}
   <div class="center pt4">
     <!-- Start Fullpage Hero -->
